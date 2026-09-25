@@ -224,14 +224,20 @@ section{ padding-block:var(--sp-section); position:relative; }
   padding-bottom:clamp(3rem,7vw,5.5rem);
 }
 .hero-media{
-  position:absolute; inset:0; z-index:0;
+  position:absolute; inset:0; z-index:0; overflow:hidden;
+}
+.hero-media::after{
+  content:'';
+  position:absolute; inset:0; z-index:1;
   background:
     radial-gradient(ellipse at 30% 20%, rgba(185,136,88,.14), transparent 55%),
-    linear-gradient(180deg, rgba(11,13,16,.35) 0%, rgba(11,13,16,.55) 60%, var(--c-obsidian) 100%),
-    repeating-linear-gradient(115deg, #14171c 0 2px, #191d22 2px 4px);
-  background-size:auto, auto, 6px 6px;
+    linear-gradient(180deg, rgba(11,13,16,.35) 0%, rgba(11,13,16,.65) 55%, var(--c-obsidian) 100%);
 }
-.hero-media video{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:.4; mix-blend-mode:luminosity; }
+.hero-media-img{
+  position:absolute; inset:0; z-index:0;
+  width:100%; height:100%; object-fit:cover; object-position:center 25%;
+}
+.hero-media video{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:.4; mix-blend-mode:luminosity; z-index:0; }
 .laser-sweep{
   position:absolute; top:0; left:-10%; width:120%; height:1px;
   background:linear-gradient(90deg, transparent, var(--c-bronze-hi), transparent);
