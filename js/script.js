@@ -5,6 +5,12 @@
 var I18N = {
   cs: {
     top_cta:"Poptat výrobu", top_contacts:"Kontakty",
+    nav_about:"O nás",
+    about_eyebrow:"O nás", about_h2:"Rodinná zámečnická dílna, která myslí jako průmyslová skupina",
+    about_lead:"Od roku 1991 stavíme na řemesle, které předáváme z generace na generaci. Dnes spojujeme laserové řezání, CNC obrábění, práškové lakování i výrobu plastů pod jednou střechou — pro zákazníky z průmyslu, automotive i filmové branže po celé Evropě.",
+    about1_t:"Tři generace", about1_b:"Rodinná firma založená v roce 1991, dnes vedená už třetí generací.",
+    about2_t:"Od návrhu po montáž", about2_b:"Každou zakázku má na starosti jeden autor — od prvního náčrtu po instalaci u zákazníka.",
+    about3_t:"Patřín · Mcely", about3_b:"Vlastní kovovýroba, CNC obrábění i prášková lakovna ve dvou provozech ve středních Čechách.",
     nav_divisions:"Divize", nav_story:"Náš příběh", nav_leadership:"Vedení", nav_numbers:"Čísla",
     nav_work:"Reference", nav_why:"Proč my", nav_careers:"Kariéra", nav_people:"Kontaktní osoby", nav_contact:"Kontakt",
     hero_eyebrow:"Zakázková kovovýroba · Práškové lakování",
@@ -97,6 +103,12 @@ var I18N = {
   },
   en: {
     top_cta:"Request a Quote", top_contacts:"Contacts",
+    nav_about:"About Us",
+    about_eyebrow:"About Us", about_h2:"A family metalworking shop that thinks like an industrial group",
+    about_lead:"Since 1991 we've built on a craft passed down through generations. Today we combine laser cutting, CNC machining, powder coating and plastics manufacturing under one roof — for customers across industry, automotive and film production throughout Europe.",
+    about1_t:"Three generations", about1_b:"A family company founded in 1991, now led by its third generation.",
+    about2_t:"From design to installation", about2_b:"Every order has one author — from the first sketch to installation at the customer's site.",
+    about3_t:"Patřín · Mcely", about3_b:"Our own metalworking, CNC machining and powder coating across two plants in central Bohemia.",
     nav_divisions:"Divisions", nav_story:"Our Story", nav_leadership:"Leadership", nav_numbers:"Numbers",
     nav_work:"Selected Work", nav_why:"Why Us", nav_careers:"Careers", nav_people:"Contact People", nav_contact:"Contact",
     hero_eyebrow:"Custom Steel Manufacturing · Powder Coating",
@@ -186,6 +198,12 @@ var I18N = {
   },
   de: {
     top_cta:"Angebot anfragen", top_contacts:"Kontakte",
+    nav_about:"Über uns",
+    about_eyebrow:"Über uns", about_h2:"Eine Familienschlosserei, die wie ein Industriekonzern denkt",
+    about_lead:"Seit 1991 bauen wir auf einem Handwerk auf, das wir von Generation zu Generation weitergeben. Heute vereinen wir Laserschneiden, CNC-Bearbeitung, Pulverbeschichtung und Kunststoffproduktion unter einem Dach — für Kunden aus Industrie, Automotive und Filmproduktion in ganz Europa.",
+    about1_t:"Drei Generationen", about1_b:"Ein Familienunternehmen, gegründet 1991, heute in dritter Generation geführt.",
+    about2_t:"Vom Entwurf bis zur Montage", about2_b:"Jeder Auftrag hat einen Verantwortlichen — von der ersten Skizze bis zur Montage beim Kunden.",
+    about3_t:"Patřín · Mcely", about3_b:"Eigene Metallverarbeitung, CNC-Bearbeitung und Pulverbeschichtung an zwei Standorten in Mittelböhmen.",
     nav_divisions:"Divisionen", nav_story:"Unsere Geschichte", nav_leadership:"Führung", nav_numbers:"Zahlen",
     nav_work:"Referenzen", nav_why:"Warum wir", nav_careers:"Karriere", nav_people:"Ansprechpartner", nav_contact:"Kontakt",
     hero_eyebrow:"Lohnfertigung aus Stahl · Pulverbeschichtung",
