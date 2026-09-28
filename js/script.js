@@ -598,7 +598,14 @@ const PROJECTS = [
     "year": "2023",
     "cover": "assets/projects/extraction-2/cover.jpg",
     "images": [
-      "assets/projects/extraction-2/01.jpg"
+      "assets/projects/extraction-2/01.jpg",
+      "assets/projects/extraction-2/02.jpg",
+      "assets/projects/extraction-2/03.jpg",
+      "assets/projects/extraction-2/04.jpg",
+      "assets/projects/extraction-2/05.jpg",
+      "assets/projects/extraction-2/06.jpg",
+      "assets/projects/extraction-2/07.jpg",
+      "assets/projects/extraction-2/08.jpg"
     ],
     "description": "Akční film Netflixu Vyproštění 2 s Chrisem Hemsworthem v hlavní roli. Velká část natáčení probíhala v Praze a okolí.",
     "delivery": [],
