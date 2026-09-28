@@ -510,106 +510,106 @@ const PROJECTS = [
     "title": "Čtyři slunce",
     "category": "film",
     "slug": "ctyri-slunce",
-    "year": "",
+    "year": "2012",
     "cover": "assets/projects/ctyri-slunce/cover.jpg",
     "images": [
       "assets/projects/ctyri-slunce/01.jpg",
       "assets/projects/ctyri-slunce/02.jpg"
     ],
-    "description": "",
+    "description": "Český film režiséra Bohdana Slámy o dvou generacích jedné rodiny a hledání smyslu života na přelomu tisíciletí. Natáčelo se v Česku.",
     "delivery": [],
     "client": "",
-    "location": ""
+    "location": "Česká republika"
   },
   {
     "title": "1864",
     "category": "film",
     "slug": "1864",
-    "year": "",
+    "year": "2014",
     "cover": "assets/projects/1864/cover.jpg",
     "images": [
       "assets/projects/1864/01.jpg",
       "assets/projects/1864/02.jpg"
     ],
-    "description": "",
+    "description": "Rozsáhlý dánský historický seriál o druhé šlesvické válce mezi Dánskem a Pruskem v roce 1864. Kvůli náročným kulisám se velká část natáčení odehrála v Česku, konkrétně ve vojenském prostoru Milovice.",
     "delivery": [],
     "client": "",
-    "location": ""
+    "location": "Milovice, Česká republika"
   },
   {
     "title": "Amundsen",
     "category": "film",
     "slug": "amundsen",
-    "year": "",
+    "year": "2019",
     "cover": "assets/projects/amundsen/cover.jpg",
     "images": [
       "assets/projects/amundsen/01.jpg",
       "assets/projects/amundsen/02.jpg"
     ],
-    "description": "",
+    "description": "Norský životopisný film o polárníkovi Roaldu Amundsenovi a jeho výpravách na severní a jižní pól. Část natáčení proběhla v Česku, v pražských ateliérech Barrandov.",
     "delivery": [],
     "client": "",
-    "location": ""
+    "location": "Praha, Česká republika"
   },
   {
     "title": "Babylon A.D.",
     "category": "film",
     "slug": "babylon-a-d",
-    "year": "",
+    "year": "2008",
     "cover": "assets/projects/babylon-a-d/cover.jpg",
     "images": [
       "assets/projects/babylon-a-d/01.jpg",
       "assets/projects/babylon-a-d/02.jpg"
     ],
-    "description": "",
+    "description": "Francouzsko-americký sci-fi akční film s Vinem Dieselem v hlavní roli, natočený podle románu Babylon Babies. Řada scén se natáčela v Praze a v ateliérech Barrandov.",
     "delivery": [],
     "client": "",
-    "location": ""
+    "location": "Praha, Česká republika"
   },
   {
     "title": "Blade Runner",
     "category": "film",
     "slug": "blade-runner",
-    "year": "",
+    "year": "2025",
     "cover": "assets/projects/blade-runner/cover.jpg",
     "images": [
       "assets/projects/blade-runner/01.jpg",
       "assets/projects/blade-runner/02.jpg"
     ],
-    "description": "",
+    "description": "Sci-fi seriál studia Amazon Blade Runner 2099, volné pokračování filmu Blade Runner 2049. Natáčení probíhalo v Praze, v ateliérech Barrandov, a na Vysočině.",
     "delivery": [],
     "client": "",
-    "location": ""
+    "location": "Praha a Vysočina, Česká republika"
   },
   {
     "title": "Extraction 2",
     "category": "film",
     "slug": "extraction-2",
-    "year": "",
+    "year": "2023",
     "cover": "assets/projects/extraction-2/cover.jpg",
     "images": [
       "assets/projects/extraction-2/01.jpg",
       "assets/projects/extraction-2/02.jpg"
     ],
-    "description": "",
+    "description": "Akční film Netflixu Vyproštění 2 s Chrisem Hemsworthem v hlavní roli. Velká část natáčení probíhala v Praze a okolí.",
     "delivery": [],
     "client": "",
-    "location": ""
+    "location": "Praha, Česká republika"
   },
   {
     "title": "Grand Hotel",
     "category": "film",
     "slug": "grand-hotel",
-    "year": "",
+    "year": "2006",
     "cover": "assets/projects/grand-hotel/cover.jpg",
     "images": [
       "assets/projects/grand-hotel/01.jpg",
       "assets/projects/grand-hotel/02.jpg"
     ],
-    "description": "",
+    "description": "Český film Davida Ondříčka odehrávající se v hotelu na Ještědu nad Libercem, s Karlem Rodenem v hlavní roli. Natáčelo se přímo v Liberci a na Ještědu.",
     "delivery": [],
     "client": "",
-    "location": ""
+    "location": "Liberec / Ještěd, Česká republika"
   },
   {
     "title": "Hellboy",
@@ -652,151 +652,151 @@ const PROJECTS = [
     "title": "Lidice",
     "category": "film",
     "slug": "lidice",
-    "year": "",
+    "year": "2011",
     "cover": "assets/projects/lidice/cover.jpg",
     "images": [
       "assets/projects/lidice/01.jpg",
       "assets/projects/lidice/02.jpg"
     ],
-    "description": "",
+    "description": "Český válečný film o tragickém vyhlazení obce Lidice nacisty v roce 1942, v hlavních rolích Karel Roden a Roman Luknár. Natáčelo se v Česku, včetně dobových exteriérů.",
     "delivery": [],
     "client": "",
-    "location": ""
+    "location": "Česká republika"
   },
   {
     "title": "Obchodník se smrtí",
     "category": "film",
     "slug": "obchodnik-se-smrti",
-    "year": "",
+    "year": "2005",
     "cover": "assets/projects/obchodnik-se-smrti/cover.jpg",
     "images": [
       "assets/projects/obchodnik-se-smrti/01.jpg",
       "assets/projects/obchodnik-se-smrti/02.jpg"
     ],
-    "description": "",
+    "description": "Americký film Obchodník se smrtí (Lord of War) s Nicolasem Cagem o obchodníkovi se zbraněmi. Řada scén vznikla v Praze a okolí.",
     "delivery": [],
     "client": "",
-    "location": ""
+    "location": "Praha, Česká republika"
   },
   {
     "title": "Z Paříže do Paříže",
     "category": "film",
     "slug": "z-parize-do-parize",
-    "year": "",
+    "year": "2017",
     "cover": "assets/projects/z-parize-do-parize/cover.jpg",
     "images": [
       "assets/projects/z-parize-do-parize/01.jpg",
       "assets/projects/z-parize-do-parize/02.jpg"
     ],
-    "description": "",
+    "description": "Francouzský film Z Paříže do Paříže (Un sac de billes) o dvou židovských chlapcích prchajících s rodinou před nacisty za druhé světové války. Řada scén se natáčela v Praze — pražské Vršovice posloužily jako dobová kulisa Paříže — a v Čechách.",
     "delivery": [],
     "client": "",
-    "location": ""
+    "location": "Praha, Česká republika"
   },
   {
     "title": "Underworld",
     "category": "film",
     "slug": "underworld",
-    "year": "",
+    "year": "2016",
     "cover": "assets/projects/underworld/cover.jpg",
     "images": [
       "assets/projects/underworld/01.jpg",
       "assets/projects/underworld/02.jpg"
     ],
-    "description": "",
+    "description": "Akční hororový film Underworld: Krvavé války ze série o boji upírů a vlkodlaků. Natáčení proběhlo téměř celé v Česku, v ateliérech Barrandov a okolí Prahy.",
     "delivery": [],
     "client": "",
-    "location": ""
+    "location": "Praha, Česká republika"
   },
   {
     "title": "Vlny",
     "category": "film",
     "slug": "vlny",
-    "year": "",
+    "year": "2024",
     "cover": "assets/projects/vlny/cover.jpg",
     "images": [
       "assets/projects/vlny/01.jpg",
       "assets/projects/vlny/02.jpg"
     ],
-    "description": "",
+    "description": "Český film Jiřího Mádla odehrávající se v prostředí Československého rozhlasu na konci 60. let, inspirovaný událostmi Pražského jara. Natáčelo se přímo v budově Českého rozhlasu v Praze.",
     "delivery": [],
     "client": "",
-    "location": ""
+    "location": "Praha, Česká republika"
   },
   {
     "title": "Zahradnictví",
     "category": "film",
     "slug": "zahradnictvi",
-    "year": "",
+    "year": "2017",
     "cover": "assets/projects/zahradnictvi/cover.jpg",
     "images": [
       "assets/projects/zahradnictvi/01.jpg",
       "assets/projects/zahradnictvi/02.jpg"
     ],
-    "description": "",
+    "description": "Trilogie českých filmů režiséra Jana Hřebejka odehrávající se v poválečném Československu, volně navazující na Pelíšky. Natáčelo se mimo jiné na zámku a v zahradách ve Veltrusech.",
     "delivery": [],
     "client": "",
-    "location": ""
+    "location": "Veltrusy, Česká republika"
   },
   {
     "title": "Spider-Man",
     "category": "film",
     "slug": "spider-man",
-    "year": "",
+    "year": "2019",
     "cover": "assets/projects/spider-man/cover.jpg",
     "images": [
       "assets/projects/spider-man/01.jpg",
       "assets/projects/spider-man/02.jpg"
     ],
-    "description": "",
+    "description": "Americký film Spider-Man: Daleko od domova ze světa Marvel, s Tomem Hollandem v hlavní roli. Několik klíčových scén se natáčelo přímo v Praze a v Liberci.",
     "delivery": [],
     "client": "",
-    "location": ""
+    "location": "Praha a Liberec, Česká republika"
   },
   {
     "title": "Blade II",
     "category": "film",
     "slug": "blade-ii",
-    "year": "",
+    "year": "2002",
     "cover": "assets/projects/blade-ii/cover.jpg",
     "images": [
       "assets/projects/blade-ii/01.jpg",
       "assets/projects/blade-ii/02.jpg"
     ],
-    "description": "",
+    "description": "Americký akční horor Blade II s Wesley Snipesem v hlavní roli, režírovaný Guillermem del Torem. Natáčel se v Praze, jejíž ulice a ateliéry posloužily jako kulisa temného velkoměsta.",
     "delivery": [],
     "client": "",
-    "location": ""
+    "location": "Praha, Česká republika"
   },
   {
     "title": "Zlatý podraz",
     "category": "film",
     "slug": "zlaty-podraz",
-    "year": "",
+    "year": "2018",
     "cover": "assets/projects/zlaty-podraz/cover.jpg",
     "images": [
       "assets/projects/zlaty-podraz/01.jpg",
       "assets/projects/zlaty-podraz/02.jpg"
     ],
-    "description": "",
+    "description": "Český film o legendárním hokejovém utkání mezi Československem a Sovětským svazem na mistrovství světa v roce 1969. Natáčelo se v Česku, včetně dobových hokejových scén.",
     "delivery": [],
     "client": "",
-    "location": ""
+    "location": "Česká republika"
   },
   {
     "title": "Liga výjimečných",
     "category": "film",
     "slug": "liga-vyjimecnych",
-    "year": "",
+    "year": "2003",
     "cover": "assets/projects/liga-vyjimecnych/cover.jpg",
     "images": [
       "assets/projects/liga-vyjimecnych/01.jpg",
       "assets/projects/liga-vyjimecnych/02.jpg"
     ],
-    "description": "",
+    "description": "Americký dobrodružný film Liga výjimečných podle komiksové předlohy, ve kterém se spojují slavné postavy viktoriánské literatury. Část natáčení probíhala v pražských ateliérech Barrandov.",
     "delivery": [],
     "client": "",
-    "location": ""
+    "location": "Praha, Česká republika"
   },
   {
     "title": "The Quake",
@@ -818,91 +818,91 @@ const PROJECTS = [
     "title": "Britannia",
     "category": "tv",
     "slug": "britannia",
-    "year": "",
+    "year": "2018",
     "cover": "assets/projects/britannia/cover.jpg",
     "images": [
       "assets/projects/britannia/01.jpg",
       "assets/projects/britannia/02.jpg"
     ],
-    "description": "",
+    "description": "Britsko-americký historický seriál Britannia odehrávající se v době římské invaze do Británie v 1. století n. l. Rozsáhlé exteriérové scény se natáčely v českých lesích a na loukách.",
     "delivery": [],
     "client": "",
-    "location": ""
+    "location": "Česká republika"
   },
   {
     "title": "Das Boot",
     "category": "tv",
     "slug": "das-boot",
-    "year": "",
+    "year": "2018",
     "cover": "assets/projects/das-boot/cover.jpg",
     "images": [
       "assets/projects/das-boot/01.jpg",
       "assets/projects/das-boot/02.jpg"
     ],
-    "description": "",
+    "description": "Německý válečný seriál Das Boot navazující na kultovní film o posádce ponorky za druhé světové války. Scény v ponorce se natáčely na modelu dlouhém přes 45 metrů v ateliérech Barrandov.",
     "delivery": [],
     "client": "",
-    "location": ""
+    "location": "Praha (Barrandov), Česká republika"
   },
   {
     "title": "Na vodě",
     "category": "tv",
     "slug": "na-vode",
-    "year": "",
+    "year": "2016",
     "cover": "assets/projects/na-vode/cover.jpg",
     "images": [
       "assets/projects/na-vode/01.jpg",
       "assets/projects/na-vode/02.jpg"
     ],
-    "description": "",
+    "description": "Český seriál televize Nova Na vodě odehrávající se mezi partou vodáků na řece. Natáčelo se přímo na českých řekách.",
     "delivery": [],
     "client": "",
-    "location": ""
+    "location": "Česká republika"
   },
   {
     "title": "The Wheel of Time",
     "category": "tv",
     "slug": "the-wheel-of-time",
-    "year": "",
+    "year": "2021",
     "cover": "assets/projects/the-wheel-of-time/cover.jpg",
     "images": [
       "assets/projects/the-wheel-of-time/01.jpg",
       "assets/projects/the-wheel-of-time/02.jpg"
     ],
-    "description": "",
+    "description": "Fantasy seriál Amazonu Kolo času podle knižní předlohy Roberta Jordana. Natáčení probíhalo v Česku, včetně rozsáhlých kulis postavených přímo pro produkci.",
     "delivery": [],
     "client": "",
-    "location": ""
+    "location": "Česká republika"
   },
   {
     "title": "Rapl",
     "category": "tv",
     "slug": "rapl",
-    "year": "",
+    "year": "2016",
     "cover": "assets/projects/rapl/cover.jpg",
     "images": [
       "assets/projects/rapl/01.jpg",
       "assets/projects/rapl/02.jpg"
     ],
-    "description": "",
+    "description": "Kriminální seriál České televize Rapl o policejním vyšetřovateli, který bojuje s vlastní minulostí. Natáčelo se v severních Čechách, mimo jiné v Ústí nad Labem, Děčíně a Jáchymově.",
     "delivery": [],
     "client": "",
-    "location": ""
+    "location": "Ústí nad Labem, Děčín a Jáchymov, Česká republika"
   },
   {
     "title": "Zlatá labuť",
     "category": "tv",
     "slug": "zlata-labut",
-    "year": "",
+    "year": "2023",
     "cover": "assets/projects/zlata-labut/cover.jpg",
     "images": [
       "assets/projects/zlata-labut/01.jpg",
       "assets/projects/zlata-labut/02.jpg"
     ],
-    "description": "",
+    "description": "Dobový seriál TV Nova Zlatá labuť odehrávající se na přelomu 19. a 20. století. Natáčelo se na zámku Brandýs nad Labem a v ateliérech.",
     "delivery": [],
     "client": "",
-    "location": ""
+    "location": "Brandýs nad Labem, Česká republika"
   },
   {
     "title": "Air France",
