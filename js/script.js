@@ -546,8 +546,7 @@ const PROJECTS = [
     "year": "2019",
     "cover": "assets/projects/amundsen/cover.jpg",
     "images": [
-      "assets/projects/amundsen/01.jpg",
-      "assets/projects/amundsen/02.jpg"
+      "assets/projects/amundsen/01.jpg"
     ],
     "description": "Norský životopisný film o polárníkovi Roaldu Amundsenovi a jeho výpravách na severní a jižní pól. Část natáčení proběhla v Česku, v pražských ateliérech Barrandov.",
     "delivery": [],
