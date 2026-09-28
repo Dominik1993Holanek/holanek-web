@@ -529,7 +529,10 @@ const PROJECTS = [
     "cover": "assets/projects/1864/cover.jpg",
     "images": [
       "assets/projects/1864/01.jpg",
-      "assets/projects/1864/02.jpg"
+      "assets/projects/1864/02.jpg",
+      "assets/projects/1864/03.jpg",
+      "assets/projects/1864/04.jpg",
+      "assets/projects/1864/05.jpg"
     ],
     "description": "Rozsáhlý dánský historický seriál o druhé šlesvické válce mezi Dánskem a Pruskem v roce 1864. Kvůli náročným kulisám se velká část natáčení odehrála v Česku, konkrétně ve vojenském prostoru Milovice.",
     "delivery": [],
