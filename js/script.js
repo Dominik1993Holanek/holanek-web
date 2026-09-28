@@ -564,8 +564,7 @@ const PROJECTS = [
     "year": "2008",
     "cover": "assets/projects/babylon-a-d/cover.jpg",
     "images": [
-      "assets/projects/babylon-a-d/01.jpg",
-      "assets/projects/babylon-a-d/02.jpg"
+      "assets/projects/babylon-a-d/01.jpg"
     ],
     "description": "Francouzsko-americký sci-fi akční film s Vinem Dieselem v hlavní roli, natočený podle románu Babylon Babies. Řada scén se natáčela v Praze a v ateliérech Barrandov.",
     "delivery": [],
