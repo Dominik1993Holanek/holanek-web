@@ -638,7 +638,13 @@ const PROJECTS = [
     "cover": "assets/projects/hellboy/cover.jpg",
     "images": [
       "assets/projects/hellboy/01.jpg",
-      "assets/projects/hellboy/02.jpg"
+      "assets/projects/hellboy/02.jpg",
+      "assets/projects/hellboy/03.jpg",
+      "assets/projects/hellboy/04.jpg",
+      "assets/projects/hellboy/05.jpg",
+      "assets/projects/hellboy/06.jpg",
+      "assets/projects/hellboy/07.jpg",
+      "assets/projects/hellboy/08.jpg"
     ],
     "description": "Ocelové konstrukční prvky pro filmové kulisy, vyrobené přesně podle výtvarných podkladů produkce.",
     "delivery": [
