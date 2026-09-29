@@ -761,7 +761,12 @@ const PROJECTS = [
     "cover": "assets/projects/vlny/cover.jpg",
     "images": [
       "assets/projects/vlny/01.jpg",
-      "assets/projects/vlny/02.jpg"
+      "assets/projects/vlny/02.jpg",
+      "assets/projects/vlny/03.jpg",
+      "assets/projects/vlny/04.jpg",
+      "assets/projects/vlny/05.jpg",
+      "assets/projects/vlny/06.jpg",
+      "assets/projects/vlny/07.jpg"
     ],
     "description": "Český film Jiřího Mádla odehrávající se v prostředí Československého rozhlasu na konci 60. let, inspirovaný událostmi Pražského jara. Natáčelo se přímo v budově Českého rozhlasu v Praze.",
     "delivery": [],
