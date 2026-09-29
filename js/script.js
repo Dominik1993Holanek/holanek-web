@@ -620,7 +620,10 @@ const PROJECTS = [
     "cover": "assets/projects/grand-hotel/cover.jpg",
     "images": [
       "assets/projects/grand-hotel/01.jpg",
-      "assets/projects/grand-hotel/02.jpg"
+      "assets/projects/grand-hotel/02.jpg",
+      "assets/projects/grand-hotel/03.jpg",
+      "assets/projects/grand-hotel/04.jpg",
+      "assets/projects/grand-hotel/05.jpg"
     ],
     "description": "Český film Davida Ondříčka odehrávající se v hotelu na Ještědu nad Libercem, s Karlem Rodenem v hlavní roli. Natáčelo se přímo v Liberci a na Ještědu.",
     "delivery": [],
