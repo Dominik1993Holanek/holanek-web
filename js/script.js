@@ -681,7 +681,10 @@ const PROJECTS = [
     "cover": "assets/projects/lidice/cover.jpg",
     "images": [
       "assets/projects/lidice/01.jpg",
-      "assets/projects/lidice/02.jpg"
+      "assets/projects/lidice/02.jpg",
+      "assets/projects/lidice/03.jpg",
+      "assets/projects/lidice/04.jpg",
+      "assets/projects/lidice/05.jpg"
     ],
     "description": "Český válečný film o tragickém vyhlazení obce Lidice nacisty v roce 1942, v hlavních rolích Karel Roden a Roman Luknár. Natáčelo se v Česku, včetně dobových exteriérů.",
     "delivery": [],
