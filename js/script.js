@@ -845,7 +845,11 @@ const PROJECTS = [
     "cover": "assets/projects/liga-vyjimecnych/cover.jpg",
     "images": [
       "assets/projects/liga-vyjimecnych/01.jpg",
-      "assets/projects/liga-vyjimecnych/02.jpg"
+      "assets/projects/liga-vyjimecnych/02.jpg",
+      "assets/projects/liga-vyjimecnych/03.jpg",
+      "assets/projects/liga-vyjimecnych/04.jpg",
+      "assets/projects/liga-vyjimecnych/05.jpg",
+      "assets/projects/liga-vyjimecnych/06.jpg"
     ],
     "description": "Americký dobrodružný film Liga výjimečných podle komiksové předlohy, ve kterém se spojují slavné postavy viktoriánské literatury. Část natáčení probíhala v pražských ateliérech Barrandov.",
     "delivery": [],
