@@ -796,7 +796,11 @@ const PROJECTS = [
     "cover": "assets/projects/spider-man/cover.jpg",
     "images": [
       "assets/projects/spider-man/01.jpg",
-      "assets/projects/spider-man/02.jpg"
+      "assets/projects/spider-man/02.jpg",
+      "assets/projects/spider-man/03.jpg",
+      "assets/projects/spider-man/04.jpg",
+      "assets/projects/spider-man/05.jpg",
+      "assets/projects/spider-man/06.jpg"
     ],
     "description": "Americký film Spider-Man: Daleko od domova ze světa Marvel, s Tomem Hollandem v hlavní roli. Několik klíčových scén se natáčelo přímo v Praze a v Liberci.",
     "delivery": [],
