@@ -699,7 +699,12 @@ const PROJECTS = [
     "cover": "assets/projects/obchodnik-se-smrti/cover.jpg",
     "images": [
       "assets/projects/obchodnik-se-smrti/01.jpg",
-      "assets/projects/obchodnik-se-smrti/02.jpg"
+      "assets/projects/obchodnik-se-smrti/02.jpg",
+      "assets/projects/obchodnik-se-smrti/03.jpg",
+      "assets/projects/obchodnik-se-smrti/04.jpg",
+      "assets/projects/obchodnik-se-smrti/05.jpg",
+      "assets/projects/obchodnik-se-smrti/06.jpg",
+      "assets/projects/obchodnik-se-smrti/07.jpg"
     ],
     "description": "Americký film Obchodník se smrtí (Lord of War) s Nicolasem Cagem o obchodníkovi se zbraněmi. Řada scén vznikla v Praze a okolí.",
     "delivery": [],
