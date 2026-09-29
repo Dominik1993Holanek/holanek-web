@@ -719,7 +719,13 @@ const PROJECTS = [
     "cover": "assets/projects/z-parize-do-parize/cover.jpg",
     "images": [
       "assets/projects/z-parize-do-parize/01.jpg",
-      "assets/projects/z-parize-do-parize/02.jpg"
+      "assets/projects/z-parize-do-parize/02.jpg",
+      "assets/projects/z-parize-do-parize/03.jpg",
+      "assets/projects/z-parize-do-parize/04.jpg",
+      "assets/projects/z-parize-do-parize/05.jpg",
+      "assets/projects/z-parize-do-parize/06.jpg",
+      "assets/projects/z-parize-do-parize/07.jpg",
+      "assets/projects/z-parize-do-parize/08.jpg"
     ],
     "description": "Francouzský film Z Paříže do Paříže (Un sac de billes) o dvou židovských chlapcích prchajících s rodinou před nacisty za druhé světové války. Řada scén se natáčela v Praze — pražské Vršovice posloužily jako dobová kulisa Paříže — a v Čechách.",
     "delivery": [],
