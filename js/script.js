@@ -740,7 +740,13 @@ const PROJECTS = [
     "cover": "assets/projects/underworld/cover.jpg",
     "images": [
       "assets/projects/underworld/01.jpg",
-      "assets/projects/underworld/02.jpg"
+      "assets/projects/underworld/02.jpg",
+      "assets/projects/underworld/03.jpg",
+      "assets/projects/underworld/04.jpg",
+      "assets/projects/underworld/05.jpg",
+      "assets/projects/underworld/06.jpg",
+      "assets/projects/underworld/07.jpg",
+      "assets/projects/underworld/08.jpg"
     ],
     "description": "Akční hororový film Underworld: Krvavé války ze série o boji upírů a vlkodlaků. Natáčení proběhlo téměř celé v Česku, v ateliérech Barrandov a okolí Prahy.",
     "delivery": [],
