@@ -972,8 +972,12 @@ const PROJECTS = [
     "year": "2023",
     "cover": "assets/projects/zlata-labut/cover.jpg",
     "images": [
+      "assets/projects/zlata-labut/03.jpg",
       "assets/projects/zlata-labut/01.jpg",
-      "assets/projects/zlata-labut/02.jpg"
+      "assets/projects/zlata-labut/02.jpg",
+      "assets/projects/zlata-labut/04.jpg",
+      "assets/projects/zlata-labut/05.jpg",
+      "assets/projects/zlata-labut/06.jpg"
     ],
     "description": "Dobový seriál TV Nova Zlatá labuť odehrávající se na přelomu 19. a 20. století. Natáčelo se na zámku Brandýs nad Labem a v ateliérech.",
     "delivery": [],
