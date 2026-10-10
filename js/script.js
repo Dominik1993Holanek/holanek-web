@@ -957,8 +957,17 @@ const PROJECTS = [
     "year": "2016",
     "cover": "assets/projects/rapl/cover.jpg",
     "images": [
+      "assets/projects/rapl/11.jpg",
+      "assets/projects/rapl/08.jpg",
+      "assets/projects/rapl/03.jpg",
+      "assets/projects/rapl/05.jpg",
       "assets/projects/rapl/01.jpg",
-      "assets/projects/rapl/02.jpg"
+      "assets/projects/rapl/02.jpg",
+      "assets/projects/rapl/04.jpg",
+      "assets/projects/rapl/06.jpg",
+      "assets/projects/rapl/09.jpg",
+      "assets/projects/rapl/10.jpg",
+      "assets/projects/rapl/07.jpg"
     ],
     "description": "Kriminální seriál České televize Rapl o policejním vyšetřovateli, který bojuje s vlastní minulostí. Natáčelo se v severních Čechách, mimo jiné v Ústí nad Labem, Děčíně a Jáchymově.",
     "delivery": [],
