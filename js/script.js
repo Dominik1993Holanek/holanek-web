@@ -902,8 +902,17 @@ const PROJECTS = [
     "year": "2018",
     "cover": "assets/projects/das-boot/cover.jpg",
     "images": [
+      "assets/projects/das-boot/05.jpg",
       "assets/projects/das-boot/01.jpg",
-      "assets/projects/das-boot/02.jpg"
+      "assets/projects/das-boot/03.jpg",
+      "assets/projects/das-boot/02.jpg",
+      "assets/projects/das-boot/10.jpg",
+      "assets/projects/das-boot/11.jpg",
+      "assets/projects/das-boot/07.jpg",
+      "assets/projects/das-boot/08.jpg",
+      "assets/projects/das-boot/04.jpg",
+      "assets/projects/das-boot/06.jpg",
+      "assets/projects/das-boot/09.jpg"
     ],
     "description": "Německý válečný seriál Das Boot navazující na kultovní film o posádce ponorky za druhé světové války. Scény v ponorce se natáčely na modelu dlouhém přes 45 metrů v ateliérech Barrandov.",
     "delivery": [],
