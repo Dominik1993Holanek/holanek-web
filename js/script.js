@@ -34,7 +34,7 @@ var I18N = {
     d1_t:"Zakázková výroba", d1_b:"Zakázková výroba pro koncového zákazníka. Vrata, ploty, schodiště a další kovovýroba na míru.",
     d2_t:"Automotive výroba", d2_b:"Přepravní palety, ocelové podesty, spádové dopravníky nebo válečkové dráhy do ČR i po celé Evropě.",
     d3_t:"Filmová produkce", d3_b:"Ocelové kulisy a konstrukce pro filmové a reklamní produkce.",
-    d4_t:"MIG/MAG a TIG", d4_b:"Svařujeme železo, hliník i nerez.",
+    d4_t:"MIG/MAG a TIG", d4_b:"Svařujeme ocel, hliník i nerez.",
     d5_t:"Laserové řezání", d5_b:"Vláknový laser Glorystar, řez materiálu do tloušťky 20 mm.",
     d6_t:"CNC obrábění", d6_b:"CNC frézky a soustruhy pro přesné díly a prototypy.",
     d7_t:"Práškové lakování", d7_b:"Vlastní prášková lakovna kvůli absolutní flexibilitě a rychlým termínům.",
