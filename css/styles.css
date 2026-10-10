@@ -710,7 +710,7 @@ footer a:hover{ color:var(--c-bronze); }
 .leader-quote{ font-family:var(--f-display); font-style:normal; font-size:1.15rem; color:var(--c-ivory); border-left:2px solid var(--c-bronze); padding-left:1.2rem; max-width:38ch; margin-top:1.6rem; }
 
 /* ---------- numbers ---------- */
-.numbers-strip{ display:grid; grid-template-columns:repeat(5,1fr); border-top:1px solid var(--c-line); border-bottom:1px solid var(--c-line); }
+.numbers-strip{ display:grid; grid-template-columns:repeat(3,1fr); border-top:1px solid var(--c-line); border-bottom:1px solid var(--c-line); }
 .numbers-strip .num-item{ padding:2.8rem 1rem; text-align:center; border-right:1px solid var(--c-line); }
 .numbers-strip .num-item:last-child{ border-right:none; }
 .numbers-strip .n{ font-family:var(--f-display); font-size:clamp(2.2rem,4vw,3.2rem); color:var(--c-bronze-hi); display:block; }
