@@ -1358,8 +1358,25 @@ const PF_INDUSTRY_DEFAULT = { film: "Filmová produkce", tv: "Televizní produkc
 const PF_STRIP_LABELS = ["Úvod", "Detail", "Výroba", "Výsledek", "Detail", "Výroba", "Detail", "Výsledek"];
 
 function pfSetHero(src) {
-  const hero = document.getElementById('pfd-hero-img');
-  hero.style.backgroundImage = src ? `url("${src}")` : '';
+  const heroImg = document.getElementById('pfd-hero-img');
+  const hero = document.getElementById('pfd-hero');
+  const poster = document.getElementById('pfd-hero-poster');
+  heroImg.style.backgroundImage = src ? `url("${src}")` : '';
+  hero.classList.remove('has-poster');
+  poster.hidden = true;
+  poster.removeAttribute('src');
+  if (!src) return;
+  // Portrait image (movie poster): show it whole and sharp next to the title,
+  // with a blurred copy as backdrop, instead of cropping it to a wide banner.
+  const probe = new Image();
+  probe.onload = () => {
+    if (probe.naturalHeight > probe.naturalWidth * 1.15) {
+      poster.src = src;
+      poster.hidden = false;
+      hero.classList.add('has-poster');
+    }
+  };
+  probe.src = src;
 }
 
 function pfRenderStrip(photos) {

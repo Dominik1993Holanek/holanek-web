@@ -415,6 +415,17 @@ section{ padding-block:var(--sp-section); position:relative; }
   background-position:center center;
   background-repeat:no-repeat;
 }
+.pfd-hero-poster{
+  position:absolute; z-index:1; top:50%; right:clamp(5rem,12vw,11rem); transform:translateY(-50%);
+  height:calc(100% - 3.2rem); width:auto; max-width:40%; object-fit:contain;
+  box-shadow:0 18px 50px rgba(0,0,0,.55); border:1px solid rgba(255,255,255,.08);
+}
+.pfd-hero-poster[hidden]{ display:none; }
+.pfd-hero.has-poster .pfd-hero-img{ filter:blur(26px) brightness(.5) saturate(1.1); transform:scale(1.15); }
+.pfd-hero.has-poster .pfd-hero-overlay{ z-index:2; background:linear-gradient(180deg, transparent 0%, rgba(11,13,16,.35) 55%, rgba(11,13,16,.85) 100%); }
+@media (max-width:820px){
+  .pfd-hero-poster{ right:50%; transform:translate(50%,-50%); top:46%; height:calc(100% - 9rem); max-width:70%; }
+}
 .pfd-hero-overlay{
   position:absolute; inset:auto 0 0 0; padding:clamp(1.8rem,5vw,4rem);
   background:linear-gradient(180deg, transparent 0%, rgba(11,13,16,.5) 45%, rgba(11,13,16,.92) 100%);
