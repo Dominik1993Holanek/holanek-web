@@ -941,7 +941,9 @@ const PROJECTS = [
     "cover": "assets/projects/the-wheel-of-time/cover.jpg",
     "images": [
       "assets/projects/the-wheel-of-time/01.jpg",
-      "assets/projects/the-wheel-of-time/02.jpg"
+      "assets/projects/the-wheel-of-time/02.jpg",
+      "assets/projects/the-wheel-of-time/03.jpg",
+      "assets/projects/the-wheel-of-time/04.jpg"
     ],
     "description": "Fantasy seriál Amazonu Kolo času podle knižní předlohy Roberta Jordana. Natáčení probíhalo v Česku, včetně rozsáhlých kulis postavených přímo pro produkci.",
     "delivery": [],
