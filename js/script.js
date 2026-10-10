@@ -68,7 +68,7 @@ var I18N = {
     leader_quote:"„Chceme, aby řemeslo v Česku mělo budoucnost — proto investujeme do lidí i strojů zároveň.“",
     numbers_eyebrow:"Čísla", numbers_h2:"Měřitelná zkušenost",
     stat1:"let na trhu", stat2:"společnosti ve skupině", stat3:"generace rodiny", stat4:"země dodávek (ČR·PL·DE)", stat5:"hloubka řezu laserem",
-    work_eyebrow:"Reference", work_h2:"Příběhy, ne jen seznam firem",
+    work_eyebrow:"Reference", work_h2:"Naše práce je součástí světových filmových příběhů.",
     nav_productions:"Produkce", nav_gallery:"Galerie",
     prod_eyebrow:"Filmové a reklamní reference", prod_lead:"Naše práce byla součástí filmových produkcí, seriálů a reklam sledovaných miliony diváků po celém světě.",
     prod_stat1:"filmových produkcí", prod_stat2:"televizních seriálů", prod_stat3:"reklamních projektů",
