@@ -926,8 +926,7 @@ const PROJECTS = [
     "year": "2016",
     "cover": "assets/projects/na-vode/cover.jpg",
     "images": [
-      "assets/projects/na-vode/01.jpg",
-      "assets/projects/na-vode/02.jpg"
+      "assets/projects/na-vode/01.jpg"
     ],
     "description": "Český seriál televize Nova Na vodě odehrávající se mezi partou vodáků na řece. Natáčelo se přímo na českých řekách.",
     "delivery": [],
