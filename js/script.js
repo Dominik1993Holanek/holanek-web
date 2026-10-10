@@ -994,6 +994,24 @@ const PROJECTS = [
     "location": "Brandýs nad Labem, Česká republika"
   },
   {
+    "title": "Carnival Row",
+    "category": "tv",
+    "slug": "carnival-row",
+    "year": "2019",
+    "cover": "assets/projects/carnival-row/cover.jpg",
+    "images": [
+      "assets/projects/carnival-row/02.jpg",
+      "assets/projects/carnival-row/01.jpg",
+      "assets/projects/carnival-row/03.jpg",
+      "assets/projects/carnival-row/04.jpg",
+      "assets/projects/carnival-row/05.jpg"
+    ],
+    "description": "Fantasy seriál Amazonu Carnival Row z viktoriánského světa lidí a mýtických bytostí. Natáčelo se v Praze a v ateliérech Barrandov.",
+    "delivery": [],
+    "client": "",
+    "location": "Praha (Barrandov), Česká republika"
+  },
+  {
     "title": "Air France",
     "category": "ad",
     "slug": "air-france",
