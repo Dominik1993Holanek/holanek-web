@@ -1363,7 +1363,7 @@ function pfApplyFilter(filter) {
 }
 
 const PF_INDUSTRY_DEFAULT = { film: "Filmová produkce", tv: "Televizní produkce", ad: "Reklama" };
-const PF_STRIP_LABELS = ["Úvod", "Detail", "Výroba", "Výsledek", "Detail", "Výroba", "Detail", "Výsledek"];
+const PF_STRIP_LABELS = ["Úvod", "Detail", "Výroba", "Výsledek", "Detail", "Výroba", "Detail", "Výsledek", "Výroba", "Detail", "Výroba", "Výsledek"];
 
 function pfSetHero(src) {
   const heroImg = document.getElementById('pfd-hero-img');
@@ -1430,7 +1430,7 @@ function pfShow(index) {
   if (!p) return;
   pfCurrentIndex = index;
 
-  const storyPhotos = (p.images && p.images.length ? p.images : []).slice(0, 8);
+  const storyPhotos = (p.images && p.images.length ? p.images : []).slice(0, 12);
   while (storyPhotos.length < 4) storyPhotos.push(null);
 
   pfSetHero(p.hero || p.cover);
