@@ -883,7 +883,12 @@ const PROJECTS = [
     "cover": "assets/projects/britannia/cover.jpg",
     "images": [
       "assets/projects/britannia/01.jpg",
-      "assets/projects/britannia/02.jpg"
+      "assets/projects/britannia/02.jpg",
+      "assets/projects/britannia/03.jpg",
+      "assets/projects/britannia/04.jpg",
+      "assets/projects/britannia/05.jpg",
+      "assets/projects/britannia/06.jpg",
+      "assets/projects/britannia/07.jpg"
     ],
     "description": "Britsko-americký historický seriál Britannia odehrávající se v době římské invaze do Británie v 1. století n. l. Rozsáhlé exteriérové scény se natáčely v českých lesích a na loukách.",
     "delivery": [],
