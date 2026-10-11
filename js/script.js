@@ -1370,7 +1370,11 @@ const PROJECTS = [
     "cover": "assets/projects/onecall/cover.jpg",
     "images": [
       "assets/projects/onecall/01.jpg",
-      "assets/projects/onecall/02.jpg"
+      "assets/projects/onecall/02.jpg",
+      "assets/projects/onecall/03.jpg",
+      "assets/projects/onecall/04.jpg",
+      "assets/projects/onecall/05.jpg",
+      "assets/projects/onecall/06.jpg"
     ],
     "description": "",
     "delivery": [],
