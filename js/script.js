@@ -1151,6 +1151,23 @@ const PROJECTS = [
     "location": "Katara, Doha, Katar"
   },
   {
+    "title": "Citroën",
+    "category": "ad",
+    "slug": "citroen",
+    "year": "",
+    "cover": "assets/projects/citroen/cover.jpg",
+    "images": [
+      "assets/projects/citroen/02.jpg",
+      "assets/projects/citroen/01.jpg",
+      "assets/projects/citroen/03.jpg",
+      "assets/projects/citroen/04.jpg"
+    ],
+    "description": "",
+    "delivery": [],
+    "client": "",
+    "location": ""
+  },
+  {
     "title": "CNBC",
     "category": "ad",
     "slug": "cnbc",
