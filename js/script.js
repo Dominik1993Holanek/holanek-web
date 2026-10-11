@@ -1326,6 +1326,12 @@ const PROJECTS = [
     "description": "", "delivery": [], "client": "", "location": ""
   },
   {
+    "title": "PlayStation", "category": "ad", "slug": "playstation", "year": "",
+    "cover": "assets/projects/playstation/cover.jpg",
+    "images": ["assets/projects/playstation/01.jpg"],
+    "description": "", "delivery": [], "client": "", "location": ""
+  },
+  {
     "title": "Marks & Spencer",
     "category": "ad",
     "slug": "marks-spencer",
