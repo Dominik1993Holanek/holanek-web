@@ -1191,8 +1191,21 @@ const PROJECTS = [
     "year": "",
     "cover": "assets/projects/coca-cola/cover.jpg",
     "images": [
+      "assets/projects/coca-cola/13.jpg",
+      "assets/projects/coca-cola/02.jpg",
+      "assets/projects/coca-cola/04.jpg",
+      "assets/projects/coca-cola/12.jpg",
+      "assets/projects/coca-cola/11.jpg",
+      "assets/projects/coca-cola/14.jpg",
       "assets/projects/coca-cola/01.jpg",
-      "assets/projects/coca-cola/02.jpg"
+      "assets/projects/coca-cola/03.jpg",
+      "assets/projects/coca-cola/05.jpg",
+      "assets/projects/coca-cola/15.jpg",
+      "assets/projects/coca-cola/10.jpg",
+      "assets/projects/coca-cola/09.jpg",
+      "assets/projects/coca-cola/08.jpg",
+      "assets/projects/coca-cola/07.jpg",
+      "assets/projects/coca-cola/06.jpg"
     ],
     "description": "Kovové konstrukční prvky pro reklamní kampaň, vyrobené na míru zadání produkce.",
     "delivery": [
