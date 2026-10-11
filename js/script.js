@@ -1012,6 +1012,23 @@ const PROJECTS = [
     "location": "Praha (Barrandov), Česká republika"
   },
   {
+    "title": "Ohnivý kuře",
+    "category": "tv",
+    "slug": "ohnivy-kure",
+    "year": "2016",
+    "cover": "assets/projects/ohnivy-kure/cover.jpg",
+    "images": [
+      "assets/projects/ohnivy-kure/02.jpg",
+      "assets/projects/ohnivy-kure/01.jpg",
+      "assets/projects/ohnivy-kure/03.jpg",
+      "assets/projects/ohnivy-kure/04.jpg"
+    ],
+    "description": "Český komediální seriál Ohnivý kuře. Pro seriál jsme vyrobili ocelový nápis s logem a měděné kotle s armaturami.",
+    "delivery": [],
+    "client": "",
+    "location": "Česká republika"
+  },
+  {
     "title": "Air France",
     "category": "ad",
     "slug": "air-france",
