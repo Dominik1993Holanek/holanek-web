@@ -1320,6 +1320,12 @@ const PROJECTS = [
     "location": ""
   },
   {
+    "title": "MTV", "category": "ad", "slug": "mtv", "year": "",
+    "cover": "assets/projects/mtv/cover.jpg",
+    "images": ["assets/projects/mtv/01.jpg","assets/projects/mtv/02.jpg","assets/projects/mtv/03.jpg","assets/projects/mtv/04.jpg","assets/projects/mtv/05.jpg","assets/projects/mtv/06.jpg","assets/projects/mtv/07.jpg","assets/projects/mtv/08.jpg","assets/projects/mtv/09.jpg","assets/projects/mtv/10.jpg","assets/projects/mtv/11.jpg","assets/projects/mtv/12.jpg","assets/projects/mtv/13.jpg","assets/projects/mtv/14.jpg"],
+    "description": "", "delivery": [], "client": "", "location": ""
+  },
+  {
     "title": "Marks & Spencer",
     "category": "ad",
     "slug": "marks-spencer",
