@@ -1086,8 +1086,10 @@ const PROJECTS = [
     "year": "",
     "cover": "assets/projects/aldi/cover.jpg",
     "images": [
-      "assets/projects/aldi/01.jpg",
-      "assets/projects/aldi/02.jpg"
+      "assets/projects/aldi/03.jpg",
+      "assets/projects/aldi/02.jpg",
+      "assets/projects/aldi/04.jpg",
+      "assets/projects/aldi/01.jpg"
     ],
     "description": "",
     "delivery": [],
