@@ -1174,8 +1174,10 @@ const PROJECTS = [
     "year": "",
     "cover": "assets/projects/cnbc/cover.jpg",
     "images": [
+      "assets/projects/cnbc/04.jpg",
       "assets/projects/cnbc/01.jpg",
-      "assets/projects/cnbc/02.jpg"
+      "assets/projects/cnbc/02.jpg",
+      "assets/projects/cnbc/03.jpg"
     ],
     "description": "",
     "delivery": [],
