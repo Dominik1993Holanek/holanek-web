@@ -1252,10 +1252,10 @@ const PROJECTS = [
     "location": ""
   },
   {
-    "title": "Heineken",
+    "title": "Heineken 2008",
     "category": "ad",
     "slug": "heineken",
-    "year": "",
+    "year": "2008",
     "cover": "assets/projects/heineken/cover.jpg",
     "images": [
       "assets/projects/heineken/02.jpg",
@@ -1275,7 +1275,7 @@ const PROJECTS = [
     "location": "Česká republika"
   },
   {
-    "title": "Heineken",
+    "title": "Heineken 2016",
     "category": "ad",
     "slug": "heineken-2016",
     "year": "2016",
