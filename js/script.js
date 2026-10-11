@@ -1275,6 +1275,27 @@ const PROJECTS = [
     "location": "Česká republika"
   },
   {
+    "title": "Heineken",
+    "category": "ad",
+    "slug": "heineken-2016",
+    "year": "2016",
+    "cover": "assets/projects/heineken-2016/cover.jpg",
+    "images": [
+      "assets/projects/heineken-2016/02.jpg",
+      "assets/projects/heineken-2016/01.jpg",
+      "assets/projects/heineken-2016/05.jpg",
+      "assets/projects/heineken-2016/04.jpg",
+      "assets/projects/heineken-2016/06.jpg",
+      "assets/projects/heineken-2016/03.jpg"
+    ],
+    "description": "Kovové konstrukční prvky pro reklamní kampaň, vyrobené na míru zadání produkce.",
+    "delivery": [
+      "Kovové konstrukční prvky na míru"
+    ],
+    "client": "Reklamní produkce",
+    "location": "Česká republika"
+  },
+  {
     "title": "Marks & Spencer",
     "category": "ad",
     "slug": "marks-spencer",
