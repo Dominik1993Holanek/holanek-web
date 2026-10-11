@@ -1119,8 +1119,10 @@ const PROJECTS = [
     "year": "",
     "cover": "assets/projects/bet365/cover.jpg",
     "images": [
-      "assets/projects/bet365/01.jpg",
-      "assets/projects/bet365/02.jpg"
+      "assets/projects/bet365/04.jpg",
+      "assets/projects/bet365/03.jpg",
+      "assets/projects/bet365/02.jpg",
+      "assets/projects/bet365/01.jpg"
     ],
     "description": "",
     "delivery": [],
