@@ -1097,6 +1097,22 @@ const PROJECTS = [
     "location": ""
   },
   {
+    "title": "Always",
+    "category": "ad",
+    "slug": "always",
+    "year": "",
+    "cover": "assets/projects/always/cover.jpg",
+    "images": [
+      "assets/projects/always/03.jpg",
+      "assets/projects/always/02.jpg",
+      "assets/projects/always/01.jpg"
+    ],
+    "description": "",
+    "delivery": [],
+    "client": "",
+    "location": ""
+  },
+  {
     "title": "Bet365",
     "category": "ad",
     "slug": "bet365",
