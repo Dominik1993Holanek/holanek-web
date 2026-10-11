@@ -1052,8 +1052,17 @@ const PROJECTS = [
     "year": "",
     "cover": "assets/projects/air-france/cover.jpg",
     "images": [
+      "assets/projects/air-france/10.jpg",
+      "assets/projects/air-france/09.jpg",
+      "assets/projects/air-france/08.jpg",
+      "assets/projects/air-france/07.jpg",
+      "assets/projects/air-france/06.jpg",
+      "assets/projects/air-france/05.jpg",
       "assets/projects/air-france/01.jpg",
-      "assets/projects/air-france/02.jpg"
+      "assets/projects/air-france/02.jpg",
+      "assets/projects/air-france/03.jpg",
+      "assets/projects/air-france/04.jpg",
+      "assets/projects/air-france/11.jpg"
     ],
     "description": "",
     "delivery": [],
