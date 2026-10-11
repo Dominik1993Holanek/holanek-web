@@ -1258,8 +1258,14 @@ const PROJECTS = [
     "year": "",
     "cover": "assets/projects/heineken/cover.jpg",
     "images": [
+      "assets/projects/heineken/02.jpg",
       "assets/projects/heineken/01.jpg",
-      "assets/projects/heineken/02.jpg"
+      "assets/projects/heineken/08.jpg",
+      "assets/projects/heineken/03.jpg",
+      "assets/projects/heineken/04.jpg",
+      "assets/projects/heineken/05.jpg",
+      "assets/projects/heineken/06.jpg",
+      "assets/projects/heineken/07.jpg"
     ],
     "description": "Kovové konstrukční prvky pro reklamní kampaň, vyrobené na míru zadání produkce.",
     "delivery": [
