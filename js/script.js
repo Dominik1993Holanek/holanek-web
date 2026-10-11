@@ -1296,6 +1296,30 @@ const PROJECTS = [
     "location": "Česká republika"
   },
   {
+    "title": "Lemonade",
+    "category": "ad",
+    "slug": "lemonade",
+    "year": "",
+    "cover": "assets/projects/lemonade/cover.jpg",
+    "images": [
+      "assets/projects/lemonade/11.jpg",
+      "assets/projects/lemonade/09.jpg",
+      "assets/projects/lemonade/10.jpg",
+      "assets/projects/lemonade/04.jpg",
+      "assets/projects/lemonade/05.jpg",
+      "assets/projects/lemonade/03.jpg",
+      "assets/projects/lemonade/02.jpg",
+      "assets/projects/lemonade/01.jpg",
+      "assets/projects/lemonade/06.jpg",
+      "assets/projects/lemonade/07.jpg",
+      "assets/projects/lemonade/08.jpg"
+    ],
+    "description": "",
+    "delivery": [],
+    "client": "",
+    "location": ""
+  },
+  {
     "title": "Marks & Spencer",
     "category": "ad",
     "slug": "marks-spencer",
