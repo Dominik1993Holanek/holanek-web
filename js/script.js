@@ -1508,7 +1508,8 @@ const PROJECTS = [
     "cover": "assets/projects/vanish/cover.jpg",
     "images": [
       "assets/projects/vanish/01.jpg",
-      "assets/projects/vanish/02.jpg"
+      "assets/projects/vanish/02.jpg",
+      "assets/projects/vanish/03.jpg"
     ],
     "description": "",
     "delivery": [],
