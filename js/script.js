@@ -1326,8 +1326,14 @@ const PROJECTS = [
     "year": "",
     "cover": "assets/projects/marks-spencer/cover.jpg",
     "images": [
-      "assets/projects/marks-spencer/01.jpg",
-      "assets/projects/marks-spencer/02.jpg"
+      "assets/projects/marks-spencer/07.jpg",
+      "assets/projects/marks-spencer/06.jpg",
+      "assets/projects/marks-spencer/05.jpg",
+      "assets/projects/marks-spencer/04.jpg",
+      "assets/projects/marks-spencer/03.jpg",
+      "assets/projects/marks-spencer/02.jpg",
+      "assets/projects/marks-spencer/08.jpg",
+      "assets/projects/marks-spencer/01.jpg"
     ],
     "description": "",
     "delivery": [],
