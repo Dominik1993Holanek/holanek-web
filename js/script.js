@@ -1539,7 +1539,11 @@ const PROJECTS = [
     "cover": "assets/projects/volvo/cover.jpg",
     "images": [
       "assets/projects/volvo/01.jpg",
-      "assets/projects/volvo/02.jpg"
+      "assets/projects/volvo/02.jpg",
+      "assets/projects/volvo/03.jpg",
+      "assets/projects/volvo/04.jpg",
+      "assets/projects/volvo/05.jpg",
+      "assets/projects/volvo/06.jpg"
     ],
     "description": "",
     "delivery": [],
