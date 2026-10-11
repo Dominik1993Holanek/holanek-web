@@ -1237,21 +1237,6 @@ const PROJECTS = [
     "location": ""
   },
   {
-    "title": "Quillette",
-    "category": "ad",
-    "slug": "quillette",
-    "year": "",
-    "cover": "assets/projects/quillette/cover.jpg",
-    "images": [
-      "assets/projects/quillette/01.jpg",
-      "assets/projects/quillette/02.jpg"
-    ],
-    "description": "",
-    "delivery": [],
-    "client": "",
-    "location": ""
-  },
-  {
     "title": "Heineken 2008",
     "category": "ad",
     "slug": "heineken",
@@ -1590,7 +1575,7 @@ function pfRenderGrid() {
     <div class="portfolio-card reveal in" data-idx="${i}" data-cat="${p.category}">
       <div class="pc-media">
         <img src="${p.cover}" alt="${p.title}" loading="lazy" onerror="this.style.display='none'">
-        <div class="pc-icon">${PF_ICONS[p.category]}</div>
+        ${p.category === 'ad' ? '' : `<div class="pc-icon">${PF_ICONS[p.category]}</div>`}
       </div>
       <div class="pc-overlay">
         <span class="pc-cat">${PF_CAT_LABEL[p.category]}</span>
