@@ -1517,14 +1517,14 @@ const PROJECTS = [
     "location": ""
   },
   {
-    "title": "Vascepa",
+    "title": "VASP",
     "category": "ad",
-    "slug": "vascepa",
+    "slug": "vasp",
     "year": "",
-    "cover": "assets/projects/vascepa/cover.jpg",
+    "cover": "assets/projects/vasp/cover.jpg",
     "images": [
-      "assets/projects/vascepa/01.jpg",
-      "assets/projects/vascepa/02.jpg"
+      "assets/projects/vasp/01.jpg",
+      "assets/projects/vasp/02.jpg"
     ],
     "description": "",
     "delivery": [],
