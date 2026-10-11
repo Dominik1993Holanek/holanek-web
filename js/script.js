@@ -1475,8 +1475,11 @@ const PROJECTS = [
     "year": "",
     "cover": "assets/projects/gillette/cover.jpg",
     "images": [
-      "assets/projects/gillette/01.jpg",
-      "assets/projects/gillette/02.jpg"
+      "assets/projects/gillette/05.jpg",
+      "assets/projects/gillette/03.jpg",
+      "assets/projects/gillette/04.jpg",
+      "assets/projects/gillette/02.jpg",
+      "assets/projects/gillette/01.jpg"
     ],
     "description": "Kovové konstrukční prvky pro reklamní kampaň, vyrobené na míru zadání produkce.",
     "delivery": [
