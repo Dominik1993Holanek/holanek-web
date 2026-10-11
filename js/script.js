@@ -1221,8 +1221,15 @@ const PROJECTS = [
     "year": "",
     "cover": "assets/projects/marvel/cover.jpg",
     "images": [
+      "assets/projects/marvel/04.jpg",
+      "assets/projects/marvel/03.jpg",
+      "assets/projects/marvel/06.jpg",
       "assets/projects/marvel/01.jpg",
-      "assets/projects/marvel/02.jpg"
+      "assets/projects/marvel/05.jpg",
+      "assets/projects/marvel/07.jpg",
+      "assets/projects/marvel/02.jpg",
+      "assets/projects/marvel/08.jpg",
+      "assets/projects/marvel/09.jpg"
     ],
     "description": "",
     "delivery": [],
