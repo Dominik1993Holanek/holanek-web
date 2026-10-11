@@ -1029,6 +1029,23 @@ const PROJECTS = [
     "location": "Česká republika"
   },
   {
+    "title": "The Defeated",
+    "category": "tv",
+    "slug": "the-defeated",
+    "year": "2020",
+    "cover": "assets/projects/the-defeated/cover.jpg",
+    "images": [
+      "assets/projects/the-defeated/04.jpg",
+      "assets/projects/the-defeated/03.jpg",
+      "assets/projects/the-defeated/01.jpg",
+      "assets/projects/the-defeated/02.jpg"
+    ],
+    "description": "Netflixový seriál The Defeated z poválečného Berlína. Pro seriál jsme vyráběli ocelové dveře, okna a rámy v dobovém stylu.",
+    "delivery": [],
+    "client": "",
+    "location": "Česká republika"
+  },
+  {
     "title": "Air France",
     "category": "ad",
     "slug": "air-france",
