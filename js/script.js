@@ -1410,7 +1410,8 @@ const PROJECTS = [
     "cover": "assets/projects/reef/cover.jpg",
     "images": [
       "assets/projects/reef/01.jpg",
-      "assets/projects/reef/02.jpg"
+      "assets/projects/reef/02.jpg",
+      "assets/projects/reef/03.jpg"
     ],
     "description": "",
     "delivery": [],
