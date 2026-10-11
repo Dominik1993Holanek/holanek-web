@@ -1462,7 +1462,8 @@ const PROJECTS = [
     "cover": "assets/projects/staropramen/cover.jpg",
     "images": [
       "assets/projects/staropramen/01.jpg",
-      "assets/projects/staropramen/02.jpg"
+      "assets/projects/staropramen/02.jpg",
+      "assets/projects/staropramen/03.jpg"
     ],
     "description": "",
     "delivery": [],
