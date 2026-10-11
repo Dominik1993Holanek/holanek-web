@@ -1354,7 +1354,8 @@ const PROJECTS = [
     "cover": "assets/projects/nokia/cover.jpg",
     "images": [
       "assets/projects/nokia/01.jpg",
-      "assets/projects/nokia/02.jpg"
+      "assets/projects/nokia/02.jpg",
+      "assets/projects/nokia/03.jpg"
     ],
     "description": "",
     "delivery": [],
