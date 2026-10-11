@@ -1130,6 +1130,27 @@ const PROJECTS = [
     "location": ""
   },
   {
+    "title": "Chac'late",
+    "category": "ad",
+    "slug": "chaclate",
+    "year": "",
+    "cover": "assets/projects/chaclate/cover.jpg",
+    "images": [
+      "assets/projects/chaclate/08.jpg",
+      "assets/projects/chaclate/07.jpg",
+      "assets/projects/chaclate/06.jpg",
+      "assets/projects/chaclate/05.jpg",
+      "assets/projects/chaclate/04.jpg",
+      "assets/projects/chaclate/03.jpg",
+      "assets/projects/chaclate/02.jpg",
+      "assets/projects/chaclate/01.jpg"
+    ],
+    "description": "",
+    "delivery": [],
+    "client": "",
+    "location": "Katara, Doha, Katar"
+  },
+  {
     "title": "CNBC",
     "category": "ad",
     "slug": "cnbc",
