@@ -1288,8 +1288,13 @@ const PROJECTS = [
     "year": "",
     "cover": "assets/projects/apple/cover.jpg",
     "images": [
-      "assets/projects/apple/01.jpg",
-      "assets/projects/apple/02.jpg"
+      "assets/projects/apple/07.jpg",
+      "assets/projects/apple/06.jpg",
+      "assets/projects/apple/05.jpg",
+      "assets/projects/apple/04.jpg",
+      "assets/projects/apple/03.jpg",
+      "assets/projects/apple/02.jpg",
+      "assets/projects/apple/01.jpg"
     ],
     "description": "",
     "delivery": [],
