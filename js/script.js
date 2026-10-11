@@ -1446,7 +1446,8 @@ const PROJECTS = [
     "cover": "assets/projects/schwarzkopf/cover.jpg",
     "images": [
       "assets/projects/schwarzkopf/01.jpg",
-      "assets/projects/schwarzkopf/02.jpg"
+      "assets/projects/schwarzkopf/02.jpg",
+      "assets/projects/schwarzkopf/03.jpg"
     ],
     "description": "",
     "delivery": [],
