@@ -1052,6 +1052,16 @@ const PROJECTS = [
     "year": "",
     "cover": "assets/projects/air-france/cover.jpg",
     "images": [
+      "assets/projects/air-france/17.jpg",
+      "assets/projects/air-france/20.jpg",
+      "assets/projects/air-france/16.jpg",
+      "assets/projects/air-france/15.jpg",
+      "assets/projects/air-france/18.jpg",
+      "assets/projects/air-france/14.jpg",
+      "assets/projects/air-france/13.jpg",
+      "assets/projects/air-france/12.jpg",
+      "assets/projects/air-france/19.jpg",
+      "assets/projects/air-france/21.jpg",
       "assets/projects/air-france/10.jpg",
       "assets/projects/air-france/09.jpg",
       "assets/projects/air-france/08.jpg",
@@ -1439,7 +1449,7 @@ function pfApplyFilter(filter) {
 }
 
 const PF_INDUSTRY_DEFAULT = { film: "Filmová produkce", tv: "Televizní produkce", ad: "Reklama" };
-const PF_STRIP_LABELS = ["Úvod", "Detail", "Výroba", "Výsledek", "Detail", "Výroba", "Detail", "Výsledek", "Výroba", "Detail", "Výroba", "Výsledek"];
+const PF_STRIP_LABELS = ["Úvod", "Detail", "Výroba", "Výsledek", "Detail", "Výroba", "Detail", "Výsledek", "Výroba", "Detail", "Výroba", "Výsledek", "Detail", "Výroba", "Detail", "Výsledek", "Výroba", "Detail", "Výroba", "Výsledek"];
 
 function pfSetHero(src) {
   const heroImg = document.getElementById('pfd-hero-img');
@@ -1506,7 +1516,7 @@ function pfShow(index) {
   if (!p) return;
   pfCurrentIndex = index;
 
-  const storyPhotos = (p.images && p.images.length ? p.images : []).slice(0, 12);
+  const storyPhotos = (p.images && p.images.length ? p.images : []).slice(0, 24);
   while (storyPhotos.length < 4) storyPhotos.push(null);
 
   pfSetHero(p.hero || p.cover);
