@@ -478,6 +478,60 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
+  /* gallery photo lightbox */
+  (function () {
+    var box = document.getElementById('gal-lightbox');
+    if (!box) return;
+    var img = document.getElementById('gal-img');
+    var count = document.getElementById('gal-count');
+    var list = [], pos = 0;
+    function visible() {
+      return Array.prototype.filter.call(document.querySelectorAll('.gallery-photo'), function (el) {
+        return !el.classList.contains('is-hidden');
+      });
+    }
+    function show(i) {
+      pos = (i + list.length) % list.length;
+      var src = list[pos].querySelector('img');
+      img.src = src.getAttribute('src');
+      img.alt = src.getAttribute('alt') || '';
+      count.textContent = (pos + 1) + ' / ' + list.length;
+    }
+    function open(el) {
+      list = visible();
+      var i = list.indexOf(el);
+      show(i < 0 ? 0 : i);
+      box.classList.add('open');
+      box.setAttribute('aria-hidden', 'false');
+      document.body.classList.add('intro-lock');
+    }
+    function close() {
+      box.classList.remove('open');
+      box.setAttribute('aria-hidden', 'true');
+      document.body.classList.remove('intro-lock');
+    }
+    document.querySelectorAll('.gallery-photo').forEach(function (el) {
+      el.addEventListener('click', function () { open(el); });
+    });
+    document.getElementById('gal-close').addEventListener('click', close);
+    document.getElementById('gal-prev').addEventListener('click', function () { show(pos - 1); });
+    document.getElementById('gal-next').addEventListener('click', function () { show(pos + 1); });
+    box.addEventListener('click', function (e) { if (e.target === box) close(); });
+    document.addEventListener('keydown', function (e) {
+      if (!box.classList.contains('open')) return;
+      if (e.key === 'Escape') close();
+      if (e.key === 'ArrowLeft') show(pos - 1);
+      if (e.key === 'ArrowRight') show(pos + 1);
+    });
+    var sx = null;
+    box.addEventListener('touchstart', function (e) { sx = e.touches[0].clientX; }, { passive: true });
+    box.addEventListener('touchend', function (e) {
+      if (sx === null) return;
+      var dx = e.changedTouches[0].clientX - sx; sx = null;
+      if (Math.abs(dx) > 50) show(pos + (dx < 0 ? 1 : -1));
+    }, { passive: true });
+  })();
+
   var counters = document.querySelectorAll('[data-count]');
   if (counters.length && 'IntersectionObserver' in window) {
     var counted = new WeakSet();
