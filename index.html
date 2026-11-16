@@ -1161,12 +1161,9 @@ document.addEventListener('click',function(e){
 // --- cookies: souhlas se ukládá do cookie "cookie_consent" na 12 měsíců ---
 // Analytické / marketingové skripty (Google Analytics, Meta pixel) spouštějte až po souhlasu:
 // window.addEventListener('cookieconsent', e => { if (e.detail.analytics) { /* načíst GA */ } });
-// Umami: načte se až po souhlasu s analytickými cookies
-window.addEventListener('cookieconsent',function(e){
-  if(!e.detail||!e.detail.analytics||window.__umamiLoaded)return;window.__umamiLoaded=true;
-  var s=document.createElement('script');s.defer=true;s.src='https://cloud.umami.is/script.js';
-  s.setAttribute('data-website-id','1272c243-a6c3-4154-8a93-0da689b73e08');document.head.appendChild(s);
-});
+// Umami (bez cookies): načte se hned
+(function(){var s=document.createElement('script');s.defer=true;s.src='https://cloud.umami.is/script.js';
+  s.setAttribute('data-website-id','1272c243-a6c3-4154-8a93-0da689b73e08');document.head.appendChild(s);})();
 document.addEventListener('click',function(e){
   if(!window.umami)return;var a=e.target.closest('a,button');if(!a)return;var h=a.getAttribute('href')||'';
   if(h.indexOf('tel:')===0)umami.track('Klik na telefon');
