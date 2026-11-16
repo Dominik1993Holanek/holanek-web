@@ -846,7 +846,7 @@ body.intro-on .top .logo img{visibility:hidden}
 
 <script>
 window.TR={
-ui:{pdfLoading:'Artikel wird geladen…',pdfDl:'PDF herunterladen',pdfErr:'Der Artikel konnte nicht angezeigt werden. Bitte laden Sie ihn über die Schaltfläche unten herunter.',galAltHome:'Auftrag nach Maß: Zaun, Tor, Treppe oder Geländer',fileBig:'Ihre Anhänge sind zusammen größer als 5 MB. Bitte verkleinern Sie sie oder senden Sie sie per E-Mail an holanek@holanekcompany.cz.',sending:'Ihre Anfrage wird gesendet…',more:'Mehr erfahren',phMissing:'Foto folgt',galAlt:'Automotive-Projekt',zoom:'Foto vergrößern',showAll:'Alle {n} Produktionen anzeigen',poster:'Plakat',videoT:'Video: Bau der kippbaren Plaza-Skybar-Kulisse',play:'Video abspielen',close:'Detail schließen',ctaP:'Wir melden uns mit Preis und Termin.',ctaBtn:'Angebot anfragen',galH:'Fotos aus der Fertigung',selProd:'Ausgewählte Produktionen',allProd:'Alle Produktionen',division:'Bereich',whatWeDo:'Was wir machen',params:'Parameter',similar:'Haben Sie einen ähnlichen Auftrag?',projInfo:'Projektdetails',year:'Jahr',cat:'Kategorie',loc:'Ort',filmType:'Film und Werbung',similarProj:'Interesse an einem ähnlichen Projekt?',formErr:'Bitte geben Sie Ihren Namen und eine gültige E-Mail-Adresse an.',formOk:'Vielen Dank, wir haben Ihre Anfrage erhalten. Wir melden uns mit Preis und Termin.'},
+ui:{sentOk:'Vielen Dank, Ihre Anfrage wurde gesendet. Wir melden uns so schnell wie möglich.',sentFail:'Ihre Anfrage konnte gerade nicht gesendet werden. Bitte versuchen Sie es gleich noch einmal oder schreiben bzw. rufen Sie uns an:',pdfLoading:'Artikel wird geladen…',pdfDl:'PDF herunterladen',pdfErr:'Der Artikel konnte nicht angezeigt werden. Bitte laden Sie ihn über die Schaltfläche unten herunter.',galAltHome:'Auftrag nach Maß: Zaun, Tor, Treppe oder Geländer',fileBig:'Ihre Anhänge sind zusammen größer als 5 MB. Bitte verkleinern Sie sie oder senden Sie sie per E-Mail an holanek@holanekcompany.cz.',sending:'Ihre Anfrage wird gesendet…',more:'Mehr erfahren',phMissing:'Foto folgt',galAlt:'Automotive-Projekt',zoom:'Foto vergrößern',showAll:'Alle {n} Produktionen anzeigen',poster:'Plakat',videoT:'Video: Bau der kippbaren Plaza-Skybar-Kulisse',play:'Video abspielen',close:'Detail schließen',ctaP:'Wir melden uns mit Preis und Termin.',ctaBtn:'Angebot anfragen',galH:'Fotos aus der Fertigung',selProd:'Ausgewählte Produktionen',allProd:'Alle Produktionen',division:'Bereich',whatWeDo:'Was wir machen',params:'Parameter',similar:'Haben Sie einen ähnlichen Auftrag?',projInfo:'Projektdetails',year:'Jahr',cat:'Kategorie',loc:'Ort',filmType:'Film und Werbung',similarProj:'Interesse an einem ähnlichen Projekt?',formErr:'Bitte geben Sie Ihren Namen und eine gültige E-Mail-Adresse an.',formOk:'Vielen Dank, wir haben Ihre Anfrage erhalten. Wir melden uns mit Preis und Termin.'},
 cat:{film:'Film',tv:'Serie',ad:'Werbung'},
 types:['Metallbau nach Maß','Zäune, Tore, Treppen','Laserschneiden / CNC','Pulverbeschichtung','Automotive-Fertigung','Film und Werbung','Kunststofffertigung','Jobs','Sonstiges'],
 divs:[
@@ -1126,6 +1126,25 @@ document.getElementById('form').addEventListener('submit',function(e){
   var tot=[].reduce.call(fIn.files,function(s,f){return s+f.size},0);
   if(tot>MAXB){e.preventDefault();m.textContent=u('fileBig','Přílohy mají dohromady víc než 5 MB. Zmenšete je, nebo je pošlete e-mailem na holanek@holanekcompany.cz.');return}
   m.textContent=u('sending','Odesíláme poptávku…');
+  if(fIn.files.length) return; // s přílohami klasické odeslání (multipart)
+  e.preventDefault();
+  var form=this,btn=form.querySelector('button[type=submit]'),data={};
+  [].forEach.call(form.elements,function(el){if(el.name&&el.type!=='file'&&el.name!=='_honey')data[el.name]=el.value});
+  if(form._honey&&form._honey.value)return;
+  btn.disabled=true;
+  var ctl=window.AbortController?new AbortController():null,tm=setTimeout(function(){ctl&&ctl.abort()},15000);
+  fetch(form.action.replace('formsubmit.co/','formsubmit.co/ajax/'),{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(data),signal:ctl?ctl.signal:undefined})
+  .then(function(r){return r.json()}).then(function(j){
+    clearTimeout(tm);btn.disabled=false;
+    if(j&&(j.success===true||j.success==='true')){form.reset();m.textContent=u('sentOk','Děkujeme, poptávka byla odeslána. Ozveme se vám co nejdříve.');if(window.umami)umami.track('Poptávka odeslána')}
+    else fail();
+  }).catch(function(){clearTimeout(tm);btn.disabled=false;fail()});
+  function fail(){
+    var body=(data.name||'')+'\n'+(data.company||'')+'\n'+(data.phone||'')+'\n'+(data.email||'')+'\n'+(data.type||'')+'\n\n'+(data.message||'');
+    var mail='mailto:holanek@holanekcompany.cz?subject='+encodeURIComponent(data._subject||'Poptávka z webu')+'&body='+encodeURIComponent(body);
+    m.innerHTML=esc(u('sentFail','Poptávku se teď nepodařilo odeslat. Zkuste to prosím za chvíli znovu, nebo nám napište či zavolejte:'))+' <a href="'+mail+'">holanek@holanekcompany.cz</a> · <a href="tel:+420606889112">+420 606 889 112</a>';
+    if(window.umami)umami.track('Poptávka selhala');
+  }
 });
 var fIn=document.getElementById('f-files'),fList=document.getElementById('fileList'),MAXB=5*1024*1024,dz=document.querySelector('.drop-zone');
 function fmtB(b){return b>1048576?(b/1048576).toFixed(1).replace('.',',')+' MB':Math.max(1,Math.round(b/1024))+' kB'}

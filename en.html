@@ -846,7 +846,7 @@ body.intro-on .top .logo img{visibility:hidden}
 
 <script>
 window.TR={
-ui:{pdfLoading:'Loading the article…',pdfDl:'Download PDF',pdfErr:'The article could not be displayed. Please download it using the button below.',galAltHome:'Custom job: fence, gate, staircase or railing',fileBig:'Your attachments are larger than 5 MB in total. Please make them smaller or email them to holanek@holanekcompany.cz.',sending:'Sending your enquiry…',more:'Learn more',phMissing:'Photo coming soon',galAlt:'Automotive project',zoom:'Enlarge photo',showAll:'Show all {n} productions',poster:'Poster',videoT:'Video: building the tilting Plaza Skybar set',play:'Play video',close:'Close detail',ctaP:'We’ll get back to you with a price and a date.',ctaBtn:'Request a quote',galH:'Photos from production',selProd:'Selected productions',allProd:'All productions',division:'Division',whatWeDo:'What we do',params:'Specifications',similar:'Have a similar job?',projInfo:'Project details',year:'Year',cat:'Category',loc:'Location',filmType:'Film and advertising',similarProj:'Interested in a similar project?',formErr:'Please fill in your name and a valid email address.',formOk:'Thank you, we’ve received your enquiry. We’ll get back to you with a price and a date.'},
+ui:{sentOk:'Thank you, your enquiry has been sent. We will get back to you as soon as possible.',sentFail:'We could not send your enquiry right now. Please try again in a moment, or email or call us:',pdfLoading:'Loading the article…',pdfDl:'Download PDF',pdfErr:'The article could not be displayed. Please download it using the button below.',galAltHome:'Custom job: fence, gate, staircase or railing',fileBig:'Your attachments are larger than 5 MB in total. Please make them smaller or email them to holanek@holanekcompany.cz.',sending:'Sending your enquiry…',more:'Learn more',phMissing:'Photo coming soon',galAlt:'Automotive project',zoom:'Enlarge photo',showAll:'Show all {n} productions',poster:'Poster',videoT:'Video: building the tilting Plaza Skybar set',play:'Play video',close:'Close detail',ctaP:'We’ll get back to you with a price and a date.',ctaBtn:'Request a quote',galH:'Photos from production',selProd:'Selected productions',allProd:'All productions',division:'Division',whatWeDo:'What we do',params:'Specifications',similar:'Have a similar job?',projInfo:'Project details',year:'Year',cat:'Category',loc:'Location',filmType:'Film and advertising',similarProj:'Interested in a similar project?',formErr:'Please fill in your name and a valid email address.',formOk:'Thank you, we’ve received your enquiry. We’ll get back to you with a price and a date.'},
 cat:{film:'Film',tv:'Series',ad:'Commercial'},
 types:['Custom metal fabrication','Fences, gates, staircases','Laser cutting / CNC','Powder coating','Automotive production','Film and advertising','Plastics production','Jobs','Other'],
 divs:[
@@ -1126,6 +1126,25 @@ document.getElementById('form').addEventListener('submit',function(e){
   var tot=[].reduce.call(fIn.files,function(s,f){return s+f.size},0);
   if(tot>MAXB){e.preventDefault();m.textContent=u('fileBig','Přílohy mají dohromady víc než 5 MB. Zmenšete je, nebo je pošlete e-mailem na holanek@holanekcompany.cz.');return}
   m.textContent=u('sending','Odesíláme poptávku…');
+  if(fIn.files.length) return; // s přílohami klasické odeslání (multipart)
+  e.preventDefault();
+  var form=this,btn=form.querySelector('button[type=submit]'),data={};
+  [].forEach.call(form.elements,function(el){if(el.name&&el.type!=='file'&&el.name!=='_honey')data[el.name]=el.value});
+  if(form._honey&&form._honey.value)return;
+  btn.disabled=true;
+  var ctl=window.AbortController?new AbortController():null,tm=setTimeout(function(){ctl&&ctl.abort()},15000);
+  fetch(form.action.replace('formsubmit.co/','formsubmit.co/ajax/'),{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(data),signal:ctl?ctl.signal:undefined})
+  .then(function(r){return r.json()}).then(function(j){
+    clearTimeout(tm);btn.disabled=false;
+    if(j&&(j.success===true||j.success==='true')){form.reset();m.textContent=u('sentOk','Děkujeme, poptávka byla odeslána. Ozveme se vám co nejdříve.');if(window.umami)umami.track('Poptávka odeslána')}
+    else fail();
+  }).catch(function(){clearTimeout(tm);btn.disabled=false;fail()});
+  function fail(){
+    var body=(data.name||'')+'\n'+(data.company||'')+'\n'+(data.phone||'')+'\n'+(data.email||'')+'\n'+(data.type||'')+'\n\n'+(data.message||'');
+    var mail='mailto:holanek@holanekcompany.cz?subject='+encodeURIComponent(data._subject||'Poptávka z webu')+'&body='+encodeURIComponent(body);
+    m.innerHTML=esc(u('sentFail','Poptávku se teď nepodařilo odeslat. Zkuste to prosím za chvíli znovu, nebo nám napište či zavolejte:'))+' <a href="'+mail+'">holanek@holanekcompany.cz</a> · <a href="tel:+420606889112">+420 606 889 112</a>';
+    if(window.umami)umami.track('Poptávka selhala');
+  }
 });
 var fIn=document.getElementById('f-files'),fList=document.getElementById('fileList'),MAXB=5*1024*1024,dz=document.querySelector('.drop-zone');
 function fmtB(b){return b>1048576?(b/1048576).toFixed(1).replace('.',',')+' MB':Math.max(1,Math.round(b/1024))+' kB'}
