@@ -375,6 +375,11 @@ footer.site{border-top:1px solid var(--line);padding-block:56px 32px}
 .x:hover{border-color:var(--bronze);color:var(--bronze-hi)}
 .sheet-hero{aspect-ratio:16/8;border-bottom:1px solid var(--line)}
 .sheet-hero .ph{height:100%}
+.sheet-hero.fit{position:relative;overflow:hidden;background:#0d1220}
+.sheet-hero.fit::before{content:"";position:absolute;inset:-40px;background:var(--bg) center/cover no-repeat;filter:blur(26px) brightness(.42)}
+.sheet-hero.fit .ph{background:none}
+.sheet-hero.fit .ph::before{display:none}
+.sheet-hero.fit .ph img{object-fit:contain;filter:none}
 .intro{position:fixed;inset:0;z-index:200;display:flex;align-items:center;justify-content:center;background-color:var(--obsidian);transition:background-color .7s ease .2s;animation:introSafe .4s ease 4.5s forwards}
 .intro img{width:min(440px,72vw);height:auto;opacity:0;transform-origin:center;animation:introIn .8s var(--ease) .15s forwards;transition:transform .9s cubic-bezier(.7,0,.2,1)}
 .intro.go{background-color:rgba(9,12,20,0);pointer-events:none}
@@ -1028,7 +1033,7 @@ function divHTML(d){
   if(d.id==='zakazkova-vyroba') extra='<div><div class="sheet-cols" style="grid-template-columns:1fr"><h4>'+u('galH','Fotky z výroby')+'</h4></div>'+strip(GALH.slice(0,9))+'</div>';
   if(d.gal) extra='<div><div class="sheet-cols" style="grid-template-columns:1fr"><h4>'+u('galH','Fotky z výroby')+'</h4></div>'+strip(GAL.slice(0,9))+'</div>';
   if(d.prod) extra='<div><h4 class="tag" style="display:block;margin-bottom:12px">'+u('selProd','Vybrané produkce')+'</h4>'+strip(PROJECTS.filter(function(p){return p.c==='film'&&p.img.length}).slice(0,6).map(function(p){return p.img[0]}))+'<p style="margin-top:14px"><a class="more" href="#produkce" data-close>'+u('allProd','Všechny produkce')+'</a></p></div>';
-  return bar()+(d.img?'<div class="sheet-hero">'+ph(d.img,d.t)+'</div>':'')+'<div class="sheet-body"><div><div class="eyebrow">'+u('division','Divize')+' 0'+(i+1)+'</div><h2 id="sheetTitle"><span class="ico">'+svg(d.ico)+'</span>'+d.t+'</h2></div><p class="lead">'+d.lead+'</p><div class="sheet-cols"><div><h4>'+u('whatWeDo','Co děláme')+'</h4><ul class="ticks">'+d.list.map(function(x){return '<li>'+x+'</li>'}).join('')+'</ul></div><div><h4>'+u('params','Parametry')+'</h4>'+d.info.map(function(r){return '<div class="info-row"><span>'+r[0]+'</span><span>'+r[1]+'</span></div>'}).join('')+'</div></div>'+extra+cta(d.type,u('similar','Máte podobnou zakázku?'))+'<div class="sheet-nav"><a class="more back" href="#divize-'+prev.id+'">← '+prev.t+'</a><a class="more" href="#divize-'+next.id+'">'+next.t+'</a></div></div>';
+  return bar()+(d.img?'<div class="sheet-hero fit" style="--bg:url(\''+d.img+'\')">'+ph(d.img,d.t)+'</div>':'')+'<div class="sheet-body"><div><div class="eyebrow">'+u('division','Divize')+' 0'+(i+1)+'</div><h2 id="sheetTitle"><span class="ico">'+svg(d.ico)+'</span>'+d.t+'</h2></div><p class="lead">'+d.lead+'</p><div class="sheet-cols"><div><h4>'+u('whatWeDo','Co děláme')+'</h4><ul class="ticks">'+d.list.map(function(x){return '<li>'+x+'</li>'}).join('')+'</ul></div><div><h4>'+u('params','Parametry')+'</h4>'+d.info.map(function(r){return '<div class="info-row"><span>'+r[0]+'</span><span>'+r[1]+'</span></div>'}).join('')+'</div></div>'+extra+cta(d.type,u('similar','Máte podobnou zakázku?'))+'<div class="sheet-nav"><a class="more back" href="#divize-'+prev.id+'">← '+prev.t+'</a><a class="more" href="#divize-'+next.id+'">'+next.t+'</a></div></div>';
 }
 function projHTML(p){
   var l=list(),i=l.indexOf(p);if(i<0){l=PROJECTS;i=l.indexOf(p)}
