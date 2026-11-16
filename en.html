@@ -714,15 +714,15 @@ body.intro-on .top .logo img{visibility:hidden}
         <div class="eyebrow">Enquiry form</div>
         <h2 style="margin-bottom:12px">Tell us about your job</h2>
         <p style="margin-bottom:32px">We'll get back to you with a price and a date. You can attach a drawing or photo right here.</p>
-        <form id="form" novalidate action="https://formsubmit.co/holanek@holanekcompany.cz" method="POST" enctype="multipart/form-data">
-          <input type="hidden" name="_subject" value="New enquiry from holanekcompany.cz (EN)"><input type="hidden" name="_template" value="table"><input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <form id="form" novalidate action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="5b832a31-83d3-4650-bcb5-38407b9590c8"><input type="hidden" name="subject" value="New enquiry from holanekcompany.cz (EN)"><input type="hidden" name="from_name" value="Web Holánek Company"><input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
           <label>Full name<input id="f-name" name="name" autocomplete="name" required></label>
           <label>Company<input id="f-company" name="company" autocomplete="organization"></label>
           <label>Phone<input id="f-phone" name="phone" type="tel" autocomplete="tel"></label>
           <label>Email<input id="f-email" name="email" type="email" autocomplete="email" required></label>
           <label class="full">What do you need<select id="f-type" name="type"></select></label>
           <label class="full">Job description<textarea id="f-msg" name="message" placeholder="Dimensions, material, quantity, deadline…"></textarea></label>
-          <div class="full file"><span class="flabel">Attachments</span><label class="drop-zone"><input id="f-files" name="attachment" type="file" multiple accept=".pdf,.jpg,.jpeg,.png,.heic,.webp,.dwg,.dxf,.step,.stp,.doc,.docx,.xls,.xlsx,.zip"><b>Drag files here or click to choose</b><small>PDF, JPG, PNG, DWG, DXF, STEP, Word, Excel, ZIP · max. 5 MB in total</small></label><ul class="file-list" id="fileList"></ul></div>
+          <div class="full file"><span class="flabel">Attachments</span><p class="form-note" style="margin:0">Please send drawings, photos or other attachments by email to <a href="mailto:holanek@holanekcompany.cz?subject=Enquiry%20–%20attachments">holanek@holanekcompany.cz</a>.</p></div>
           <p class="form-note">We'll only use the data from this form to handle your enquiry. Details are in our <a href="#ochrana-osobnich-udaju">Privacy Policy</a>.</p>
           <div class="full"><button class="btn btn-bronze" type="submit">Send enquiry</button></div>
           <p class="form-msg" id="formMsg" hidden></p>
@@ -1123,17 +1123,14 @@ document.getElementById('form').addEventListener('submit',function(e){
   var m=document.getElementById('formMsg'),n=document.getElementById('f-name'),em=document.getElementById('f-email');
   m.hidden=false;
   if(!n.value.trim()||em.value.indexOf('@')<1){e.preventDefault();m.textContent=u('formErr','Vyplňte prosím jméno a platný e-mail.');return}
-  var tot=[].reduce.call(fIn.files,function(s,f){return s+f.size},0);
-  if(tot>MAXB){e.preventDefault();m.textContent=u('fileBig','Přílohy mají dohromady víc než 5 MB. Zmenšete je, nebo je pošlete e-mailem na holanek@holanekcompany.cz.');return}
   m.textContent=u('sending','Odesíláme poptávku…');
-  if(fIn.files.length) return; // s přílohami klasické odeslání (multipart)
   e.preventDefault();
   var form=this,btn=form.querySelector('button[type=submit]'),data={};
-  [].forEach.call(form.elements,function(el){if(el.name&&el.type!=='file'&&el.name!=='_honey')data[el.name]=el.value});
-  if(form._honey&&form._honey.value)return;
+  [].forEach.call(form.elements,function(el){if(el.name&&el.type!=='checkbox')data[el.name]=el.value});
+  if(form.botcheck&&form.botcheck.checked)return;
   btn.disabled=true;
   var ctl=window.AbortController?new AbortController():null,tm=setTimeout(function(){ctl&&ctl.abort()},15000);
-  fetch(form.action.replace('formsubmit.co/','formsubmit.co/ajax/'),{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(data),signal:ctl?ctl.signal:undefined})
+  fetch(form.action,{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(data),signal:ctl?ctl.signal:undefined})
   .then(function(r){return r.json()}).then(function(j){
     clearTimeout(tm);btn.disabled=false;
     if(j&&(j.success===true||j.success==='true')){form.reset();m.textContent=u('sentOk','Děkujeme, poptávka byla odeslána. Ozveme se vám co nejdříve.');if(window.umami)umami.track('Poptávka odeslána')}
@@ -1141,18 +1138,11 @@ document.getElementById('form').addEventListener('submit',function(e){
   }).catch(function(){clearTimeout(tm);btn.disabled=false;fail()});
   function fail(){
     var body=(data.name||'')+'\n'+(data.company||'')+'\n'+(data.phone||'')+'\n'+(data.email||'')+'\n'+(data.type||'')+'\n\n'+(data.message||'');
-    var mail='mailto:holanek@holanekcompany.cz?subject='+encodeURIComponent(data._subject||'Poptávka z webu')+'&body='+encodeURIComponent(body);
+    var mail='mailto:holanek@holanekcompany.cz?subject='+encodeURIComponent(data.subject||'Poptávka z webu')+'&body='+encodeURIComponent(body);
     m.innerHTML=esc(u('sentFail','Poptávku se teď nepodařilo odeslat. Zkuste to prosím za chvíli znovu, nebo nám napište či zavolejte:'))+' <a href="'+mail+'">holanek@holanekcompany.cz</a> · <a href="tel:+420606889112">+420 606 889 112</a>';
     if(window.umami)umami.track('Poptávka selhala');
   }
 });
-var fIn=document.getElementById('f-files'),fList=document.getElementById('fileList'),MAXB=5*1024*1024,dz=document.querySelector('.drop-zone');
-function fmtB(b){return b>1048576?(b/1048576).toFixed(1).replace('.',',')+' MB':Math.max(1,Math.round(b/1024))+' kB'}
-function showFiles(){fList.innerHTML=[].map.call(fIn.files,function(f){return '<li><span>'+esc(f.name)+'</span><small>'+fmtB(f.size)+'</small></li>'}).join('')}
-fIn.addEventListener('change',showFiles);
-['dragenter','dragover'].forEach(function(ev){dz.addEventListener(ev,function(e){e.preventDefault();dz.classList.add('over')})});
-['dragleave','drop'].forEach(function(ev){dz.addEventListener(ev,function(){dz.classList.remove('over')})});
-dz.addEventListener('drop',function(e){e.preventDefault();if(e.dataTransfer&&e.dataTransfer.files.length){fIn.files=e.dataTransfer.files;showFiles()}});
 
 // --- chybějící fotky: rámeček s iniciálami / popiskem ---
 function hookImgs(root){root.querySelectorAll('.ph > img').forEach(function(img){
