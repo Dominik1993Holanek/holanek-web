@@ -714,15 +714,15 @@ body.intro-on .top .logo img{visibility:hidden}
         <div class="eyebrow">Anfrageformular</div>
         <h2 style="margin-bottom:12px">Beschreiben Sie uns Ihren Auftrag</h2>
         <p style="margin-bottom:32px">Wir melden uns mit Preis und Termin. Zeichnungen oder Fotos können Sie direkt hier anhängen.</p>
-        <form id="form" novalidate action="https://api.web3forms.com/submit" method="POST">
-          <input type="hidden" name="access_key" value="5b832a31-83d3-4650-bcb5-38407b9590c8"><input type="hidden" name="subject" value="Neue Anfrage über holanekcompany.cz (DE)"><input type="hidden" name="from_name" value="Web Holánek Company"><input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <form id="form" novalidate action="https://formsubmit.co/holanek@holanekcompany.cz" method="POST" enctype="multipart/form-data">
+          <input type="hidden" name="_subject" value="Neue Anfrage über holanekcompany.cz (DE)"><input type="hidden" name="_template" value="table"><input type="hidden" name="_next" value=""><input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
           <label>Vor- und Nachname<input id="f-name" name="name" autocomplete="name" required></label>
           <label>Firma<input id="f-company" name="company" autocomplete="organization"></label>
           <label>Telefon<input id="f-phone" name="phone" type="tel" autocomplete="tel"></label>
           <label>E-Mail<input id="f-email" name="email" type="email" autocomplete="email" required></label>
           <label class="full">Was benötigen Sie<select id="f-type" name="type"></select></label>
           <label class="full">Beschreibung des Auftrags<textarea id="f-msg" name="message" placeholder="Maße, Material, Stückzahl, Termin…"></textarea></label>
-          <div class="full file"><span class="flabel">Anhänge</span><p class="form-note" style="margin:0">Zeichnungen, Fotos oder andere Anhänge senden Sie uns bitte per E-Mail an <a href="mailto:holanek@holanekcompany.cz?subject=Anfrage%20–%20Anhänge">holanek@holanekcompany.cz</a>.</p></div>
+          <div class="full file"><span class="flabel">Anhänge</span><label class="drop-zone"><input id="f-files" name="attachment" type="file" multiple accept=".pdf,.jpg,.jpeg,.png,.heic,.webp,.dwg,.dxf,.step,.stp,.doc,.docx,.xls,.xlsx,.zip"><b>Dateien hierher ziehen oder klicken</b><small>PDF, JPG, PNG, DWG, DXF, STEP, Word, Excel, ZIP · max. 10 MB insgesamt</small></label><ul class="file-list" id="fileList"></ul></div>
           <p class="form-note">Die Angaben aus dem Formular verwenden wir nur zur Bearbeitung Ihrer Anfrage. Einzelheiten finden Sie in unserer <a href="#ochrana-osobnich-udaju">Datenschutzerklärung</a>.</p>
           <div class="full"><button class="btn btn-bronze" type="submit">Anfrage senden</button></div>
           <p class="form-msg" id="formMsg" hidden></p>
@@ -846,7 +846,7 @@ body.intro-on .top .logo img{visibility:hidden}
 
 <script>
 window.TR={
-ui:{sentOk:'Vielen Dank, Ihre Anfrage wurde gesendet. Wir melden uns so schnell wie möglich.',sentFail:'Ihre Anfrage konnte gerade nicht gesendet werden. Bitte versuchen Sie es gleich noch einmal oder schreiben bzw. rufen Sie uns an:',pdfLoading:'Artikel wird geladen…',pdfDl:'PDF herunterladen',pdfErr:'Der Artikel konnte nicht angezeigt werden. Bitte laden Sie ihn über die Schaltfläche unten herunter.',galAltHome:'Auftrag nach Maß: Zaun, Tor, Treppe oder Geländer',fileBig:'Ihre Anhänge sind zusammen größer als 5 MB. Bitte verkleinern Sie sie oder senden Sie sie per E-Mail an holanek@holanekcompany.cz.',sending:'Ihre Anfrage wird gesendet…',more:'Mehr erfahren',phMissing:'Foto folgt',galAlt:'Automotive-Projekt',zoom:'Foto vergrößern',showAll:'Alle {n} Produktionen anzeigen',poster:'Plakat',videoT:'Video: Bau der kippbaren Plaza-Skybar-Kulisse',play:'Video abspielen',close:'Detail schließen',ctaP:'Wir melden uns mit Preis und Termin.',ctaBtn:'Angebot anfragen',galH:'Fotos aus der Fertigung',selProd:'Ausgewählte Produktionen',allProd:'Alle Produktionen',division:'Bereich',whatWeDo:'Was wir machen',params:'Parameter',similar:'Haben Sie einen ähnlichen Auftrag?',projInfo:'Projektdetails',year:'Jahr',cat:'Kategorie',loc:'Ort',filmType:'Film und Werbung',similarProj:'Interesse an einem ähnlichen Projekt?',formErr:'Bitte geben Sie Ihren Namen und eine gültige E-Mail-Adresse an.',formOk:'Vielen Dank, wir haben Ihre Anfrage erhalten. Wir melden uns mit Preis und Termin.'},
+ui:{sentOk:'Vielen Dank, Ihre Anfrage wurde gesendet. Wir melden uns so schnell wie möglich.',sentFail:'Ihre Anfrage konnte gerade nicht gesendet werden. Bitte versuchen Sie es gleich noch einmal oder schreiben bzw. rufen Sie uns an:',pdfLoading:'Artikel wird geladen…',pdfDl:'PDF herunterladen',pdfErr:'Der Artikel konnte nicht angezeigt werden. Bitte laden Sie ihn über die Schaltfläche unten herunter.',galAltHome:'Auftrag nach Maß: Zaun, Tor, Treppe oder Geländer',fileBig:'Ihre Anhänge sind zusammen größer als 10 MB. Bitte verkleinern Sie sie oder senden Sie sie per E-Mail an holanek@holanekcompany.cz.',sending:'Ihre Anfrage wird gesendet…',more:'Mehr erfahren',phMissing:'Foto folgt',galAlt:'Automotive-Projekt',zoom:'Foto vergrößern',showAll:'Alle {n} Produktionen anzeigen',poster:'Plakat',videoT:'Video: Bau der kippbaren Plaza-Skybar-Kulisse',play:'Video abspielen',close:'Detail schließen',ctaP:'Wir melden uns mit Preis und Termin.',ctaBtn:'Angebot anfragen',galH:'Fotos aus der Fertigung',selProd:'Ausgewählte Produktionen',allProd:'Alle Produktionen',division:'Bereich',whatWeDo:'Was wir machen',params:'Parameter',similar:'Haben Sie einen ähnlichen Auftrag?',projInfo:'Projektdetails',year:'Jahr',cat:'Kategorie',loc:'Ort',filmType:'Film und Werbung',similarProj:'Interesse an einem ähnlichen Projekt?',formErr:'Bitte geben Sie Ihren Namen und eine gültige E-Mail-Adresse an.',formOk:'Vielen Dank, wir haben Ihre Anfrage erhalten. Wir melden uns mit Preis und Termin.'},
 cat:{film:'Film',tv:'Serie',ad:'Werbung'},
 types:['Metallbau nach Maß','Zäune, Tore, Treppen','Laserschneiden / CNC','Pulverbeschichtung','Automotive-Fertigung','Film und Werbung','Kunststofffertigung','Jobs','Sonstiges'],
 divs:[
@@ -1121,28 +1121,42 @@ document.addEventListener('click',function(e){
 });
 document.getElementById('form').addEventListener('submit',function(e){
   var m=document.getElementById('formMsg'),n=document.getElementById('f-name'),em=document.getElementById('f-email');
+  var form=this,btn=form.querySelector('button[type=submit]'),data={};
   m.hidden=false;
   if(!n.value.trim()||em.value.indexOf('@')<1){e.preventDefault();m.textContent=u('formErr','Vyplňte prosím jméno a platný e-mail.');return}
+  if(form._honey&&form._honey.value){e.preventDefault();return}
+  var tot=[].reduce.call(fIn.files,function(s,f){return s+f.size},0);
+  if(tot>MAXB){e.preventDefault();m.textContent=u('fileBig','Přílohy mají dohromady víc než 10 MB. Zmenšete je, nebo je pošlete e-mailem na holanek@holanekcompany.cz.');return}
   m.textContent=u('sending','Odesíláme poptávku…');
+  // s přílohami: klasické odeslání (multipart) na FormSubmit, který pak vrátí návštěvníka zpět na web
+  if(fIn.files.length){form._next.value=location.origin+location.pathname+'?odeslano=1#poptavka';btn.disabled=true;if(window.umami)umami.track('Poptávka odeslána (s přílohou)');return}
+  // bez příloh: odeslání na pozadí
   e.preventDefault();
-  var form=this,btn=form.querySelector('button[type=submit]'),data={};
-  [].forEach.call(form.elements,function(el){if(el.name&&el.type!=='checkbox')data[el.name]=el.value});
-  if(form.botcheck&&form.botcheck.checked)return;
+  [].forEach.call(form.elements,function(el){if(el.name&&el.type!=='file'&&el.name!=='_honey'&&el.name!=='_next')data[el.name]=el.value});
   btn.disabled=true;
   var ctl=window.AbortController?new AbortController():null,tm=setTimeout(function(){ctl&&ctl.abort()},15000);
-  fetch(form.action,{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(data),signal:ctl?ctl.signal:undefined})
+  fetch(form.action.replace('formsubmit.co/','formsubmit.co/ajax/'),{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(data),signal:ctl?ctl.signal:undefined})
   .then(function(r){return r.json()}).then(function(j){
     clearTimeout(tm);btn.disabled=false;
-    if(j&&(j.success===true||j.success==='true')){form.reset();m.textContent=u('sentOk','Děkujeme, poptávka byla odeslána. Ozveme se vám co nejdříve.');if(window.umami)umami.track('Poptávka odeslána')}
+    if(j&&(j.success===true||j.success==='true')){form.reset();showFiles();m.textContent=u('sentOk','Děkujeme, poptávka byla odeslána. Ozveme se vám co nejdříve.');if(window.umami)umami.track('Poptávka odeslána')}
     else fail();
   }).catch(function(){clearTimeout(tm);btn.disabled=false;fail()});
   function fail(){
     var body=(data.name||'')+'\n'+(data.company||'')+'\n'+(data.phone||'')+'\n'+(data.email||'')+'\n'+(data.type||'')+'\n\n'+(data.message||'');
-    var mail='mailto:holanek@holanekcompany.cz?subject='+encodeURIComponent(data.subject||'Poptávka z webu')+'&body='+encodeURIComponent(body);
+    var mail='mailto:holanek@holanekcompany.cz?subject='+encodeURIComponent(data._subject||'Poptávka z webu')+'&body='+encodeURIComponent(body);
     m.innerHTML=esc(u('sentFail','Poptávku se teď nepodařilo odeslat. Zkuste to prosím za chvíli znovu, nebo nám napište či zavolejte:'))+' <a href="'+mail+'">holanek@holanekcompany.cz</a> · <a href="tel:+420606889112">+420 606 889 112</a>';
     if(window.umami)umami.track('Poptávka selhala');
   }
 });
+var fIn=document.getElementById('f-files'),fList=document.getElementById('fileList'),MAXB=10*1024*1024,dz=document.querySelector('.drop-zone');
+function fmtB(b){return b>1048576?(b/1048576).toFixed(1).replace('.',',')+' MB':Math.max(1,Math.round(b/1024))+' kB'}
+function showFiles(){fList.innerHTML=[].map.call(fIn.files,function(f){return '<li><span>'+esc(f.name)+'</span><small>'+fmtB(f.size)+'</small></li>'}).join('')}
+fIn.addEventListener('change',showFiles);
+['dragenter','dragover'].forEach(function(ev){dz.addEventListener(ev,function(e){e.preventDefault();dz.classList.add('over')})});
+['dragleave','drop'].forEach(function(ev){dz.addEventListener(ev,function(){dz.classList.remove('over')})});
+dz.addEventListener('drop',function(e){e.preventDefault();if(e.dataTransfer&&e.dataTransfer.files.length){fIn.files=e.dataTransfer.files;showFiles()}});
+// návrat z FormSubmitu po odeslání s přílohou
+if(/[?&]odeslano=1/.test(location.search)){var fm=document.getElementById('formMsg');fm.hidden=false;fm.textContent=u('sentOk','Děkujeme, poptávka byla odeslána. Ozveme se vám co nejdříve.');try{history.replaceState(null,'',location.pathname+'#poptavka')}catch(_){}}
 
 // --- chybějící fotky: rámeček s iniciálami / popiskem ---
 function hookImgs(root){root.querySelectorAll('.ph > img').forEach(function(img){
